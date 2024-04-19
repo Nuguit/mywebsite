@@ -1,6 +1,5 @@
 import { Flex, Text } from "@chakra-ui/layout"
-import NavigationLink from "../../NavigationLink/NavigationLink"
-
+import NavigationLink from "../NavigationLink/NavigationLink"
 
 
 
@@ -21,14 +20,14 @@ const Navbar = () => {
     <Flex
       direction={{ base: "column", md: "row" }}
       padding={{ base: "20px", md: "34px 80px" }}
-      backgroundColor={"#308c67"}
+      backgroundColor={"#DB8AD3"}
       color={"white"}
       alignItems="center"
       justifyContent="space-between"
     >
       <Flex gap={"34px"}>
         {NAVIGATION_LINK.map(({ link, text }) => {
-          const isActiveLink = location.pathname === link
+          const isActiveLink = window.location.pathname === link
           return (
             <NavigationLink
               to={link}
