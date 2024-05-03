@@ -7,25 +7,26 @@ import NavigationLink from "../NavigationLink/NavigationLink"
 const Navbar = () => {
   const NAVIGATION_LINK = [
     {
-      link: "/aboutme",
+      link: "/about",
       text: "Sobre mí",
 
     },
-    { link: "/portfolio", text: "Portfolio" },
+    { link: "/curriculum", text: "Curriculum" },
     
   ]
 
   return (
 
     <Flex
+    className="name"
       direction={{ base: "column", md: "row" }}
       padding={{ base: "20px", md: "34px 80px" }}
-      backgroundColor={"#DB8AD3"}
-      color={"white"}
+      backgroundColor={"#662549"}
       alignItems="center"
       justifyContent="space-between"
+      paddingLeft={"50px"}
     >
-      <Flex gap={"34px"}>
+      <Flex gap={"54px"}>
         {NAVIGATION_LINK.map(({ link, text }) => {
           const isActiveLink = window.location.pathname === link
           return (
@@ -36,7 +37,7 @@ const Navbar = () => {
 
             >
               <Text>{text}</Text>
-            </NavigationLink>
+              </NavigationLink> 
           )
         })}
       </Flex>

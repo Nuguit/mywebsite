@@ -5,15 +5,16 @@ import Footer from "../Footer/Footer"
 
 
 const Layout = () => {
-
   return (
-    <>
-      <Navbar/>
-      <Outlet />
-      < Footer />
+    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', }}>
+      <Navbar />
+      <div style={{ flex: 1, overflowY: 'auto', backgroundColor: "#451952" }}>
+        <Outlet />
+      </div>
+      <Footer/>
       
-   </> 
-  )
-}
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

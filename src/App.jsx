@@ -3,7 +3,8 @@ import AppRoutes from "./Routes/AppRoutes";
 
 function App() {
   return (
-    <AppRoutes />
+    <div className="custom-scrollbar">
+    <AppRoutes /></div>
   );
 }
 
