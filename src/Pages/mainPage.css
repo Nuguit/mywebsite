@@ -1,0 +1,42 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    overflow-x: hidden; 
+  }
+  
+  .content-container {
+    text-align: center;
+    color: #F39F5A;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: auto; 
+  }
+  
+  .description {
+    width: 100%; 
+    margin: 0 auto;
+    color: #AE445A;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Oswald;
+  }
+  
+  .quote {
+    font-size: 30px;
+    color: white;
+    font-family: "La Belle Aurore", cursive; 
+  }
+  
+  .pixelart-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .name {
+    font-size: 80px;
+  }
+  
