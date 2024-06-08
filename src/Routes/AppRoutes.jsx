@@ -3,6 +3,7 @@ import Layout from "../Components/Layout/Layout"
 import MainPage from "../Pages/MainPage"
 import SobreMi from "../Pages/SobreMi/SobreMi"
 import Curriculum from "../Pages/Curriculum/Curriculum"
+import SafeMapPage from "../Pages/SafeMap/SafeMapPage"
 
 const AppRoutes = () => {
     const router = createBrowserRouter([
@@ -21,7 +22,10 @@ const AppRoutes = () => {
             path: "/curriculum",
             element: <Curriculum />,
           },
-
+          {
+            path: "/safemap",
+            element: <SafeMapPage />,
+          },
     
 
         

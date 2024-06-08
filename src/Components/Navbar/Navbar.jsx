@@ -12,6 +12,8 @@ const Navbar = () => {
 
     },
     { link: "/curriculum", text: "Curriculum" },
+
+    { link: "/safemap", text: "SafeMap" }
     
   ]
 
