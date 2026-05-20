@@ -5,6 +5,7 @@ import safemap from "../SafeMap/safemap.png";
 import pastinpixels from "./pastinpixels.jpg";
 import palmotion from "./palmotion.jpg";
 import movieselector from "./movieselector.jpg";
+import eagles from "./eagles.jpeg";
 
 const projectsMeta = [
   {
@@ -28,6 +29,14 @@ const projectsMeta = [
     tags: ["JavaScript", "HTML", "CSS", "API"],
     image: movieselector,
     link: "https://nuguit.github.io/cinema/",
+    internal: false,
+    status: "live",
+  },
+  {
+    slug: "eaglesinspain",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: eagles,
+    link: "https://eaglesinspain.free.nf/",
     internal: false,
     status: "live",
   },
