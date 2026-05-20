@@ -1,47 +1,63 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import "../Pages/mainPage.css"
 
-import Pixelart from "../Pages/pixelart.png";
-
 const MainPage = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="main-container">
       <div className="content-container">
+
+        <motion.p
+          className="hero-label"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {t('home.label')}
+        </motion.p>
+
         <motion.h1
-          className='name'
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
-          transition={{ duration: 2}}
+          className="name-heading cursor"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
         >
-          Nuria Guevara Fuentes
+          Nuria <span className="accent">Guevara</span>
         </motion.h1>
-        
-        <motion.h2
-          className='name'
-          style={{fontSize:"40px", marginTop:"10px"}}
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
-          transition={{ duration: 4, delay: 1}}
+
+        <motion.p
+          className="description"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.8 }}
         >
-          Desarrolladora Web FullStack, periodista y especialista en comunicación empresarial.
-        </motion.h2>
-        
-        <div className='description'>
-          <p>
-            Creativa y curiosa por naturaleza.
-          </p>
-          <p>
-            Apasionada por la tecnología y la comunicación.
-          </p>
-        </div>
-        
-        <p className='quote'>No existe el "no sé", existe el "busquemos cómo".</p>
-        
-        <Link to="/about">
-          <img src={Pixelart} alt="Pixelart" className="pixelart-img" />
-        </Link>
+          {t('home.desc1')}<br />
+          {t('home.desc2')}
+        </motion.p>
+
+        <motion.div
+          className="quote"
+          initial={{ opacity: 0, x: -16 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 1.2 }}
+        >
+          {t('home.quote')}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 1.6 }}
+        >
+          <Link to="/about" className="cta-button">
+            {t('home.cta')}
+          </Link>
+        </motion.div>
+
       </div>
     </div>
   );

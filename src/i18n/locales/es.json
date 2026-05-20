@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "curriculum": "Curriculum",
+    "projects": "Proyectos"
+  },
+  "home": {
+    "label": "Full-Stack Developer · Periodista · Comunicación Empresarial",
+    "desc1": "Creativa y curiosa por naturaleza.",
+    "desc2": "Apasionada por la tecnología y la comunicación.",
+    "quote": "No existe el \"no sé\", existe el \"busquemos cómo\".",
+    "cta": "Explorar perfil →"
+  },
+  "about": {
+    "label": "sobre mí",
+    "quote": "\"El arte de la comunicación es el lenguaje del liderazgo\"",
+    "author": "— James Humes",
+    "p1": "Humes no se equivocaba al afirmarlo. Sólo a través de una comunicación efectiva y honesta podemos llegar a alcanzar nuestros objetivos, tanto en la vida personal como en la profesional.",
+    "p2": "He desarrollado esta vocación durante más de una década, compaginando experiencias laborales con formación. Disfruto diseñando estrategias de comunicación, sus elementos visuales y todo lo relacionado con transmitir la identidad de una marca. El valor de una empresa no está en los números, sino en las emociones que generamos.",
+    "p3a": "Tras llevar más de diez años dedicados en exclusiva a la comunicación empresarial, decidí ampliar mis horizontes y sumar otra rama a mis conocimientos:",
+    "p3highlight": "el desarrollo web",
+    "p3b": ". Trabajando con lenguajes de front y back end, la experiencia comunicacional que puedo ofrecer ahora es completa: partiendo de cero, creamos toda la imagen corporativa, diseñamos la estrategia y la llevamos a cabo."
+  },
+  "curriculum": {
+    "expLabel": "experiencia",
+    "expTitle": "Trayectoria Profesional",
+    "stackLabel": "stack técnico",
+    "stackTitle": "Lenguajes y Herramientas",
+    "toolsLabel": "herramientas",
+    "toolsTitle": "Programas",
+    "cvCompany": "empresa",
+    "cvLocation": "ubicación",
+    "cvDesc": "descripción",
+    "badgeCurrent": "actual",
+    "entries": [
+      {
+        "id": 1,
+        "period": "2025 — Presente",
+        "role": "Desarrolladora Web",
+        "company": "SEO Málaga",
+        "location": "Málaga, España",
+        "items": [
+          "Incorporación tras finalizar las prácticas del Grado Superior DAW",
+          "Tutora de prácticas: \"parte ya imprescindible de la dinámica de la empresa\"",
+          "Desarrollo y mantenimiento de proyectos web en entorno profesional",
+          "Desarrollo de aplicaciones web con diferentes lenguajes y frameworks según proyecto; Wordpress y desarrollo de IA"
+        ],
+        "tags": ["Web Development", "IA", "WordPress", "Trabajo actual"],
+        "highlight": true
+      },
+      {
+        "id": 7,
+        "period": "Actualmente",
+        "role": "Máster en Desarrollo Web con IA",
+        "company": "The Big School · Universidad Isabel I",
+        "location": "España",
+        "items": [
+          "Formación avanzada en desarrollo web aplicado a inteligencia artificial",
+          "Programa en colaboración entre The Big School y la Universidad Isabel I"
+        ],
+        "tags": ["IA", "Desarrollo Web", "Máster"],
+        "highlight": true
+      },
+      {
+        "id": 2,
+        "period": "2025",
+        "role": "Freelance — Rediseño Web y Contenidos",
+        "company": "Advokatkontoret.es",
+        "location": "España",
+        "items": [
+          "Rediseño de secciones clave del sitio web",
+          "Implementación de soporte multiidioma sin uso de plugins",
+          "Creación y edición de contenido audiovisual para la plataforma"
+        ],
+        "tags": ["WordPress", "Multiidioma", "Audiovisual", "Diseño Web"],
+        "highlight": false
+      },
+      {
+        "id": 3,
+        "period": "2024 — 2026",
+        "role": "Técnico Superior en Desarrollo de Aplicaciones Web",
+        "company": "Universidad Alfonso X El Sabio",
+        "location": "Madrid, España",
+        "items": [
+          "Grado Superior en Desarrollo de Aplicaciones Web (DAW)",
+          "Prácticas en empresa: SEO Málaga",
+          "Trabajo de Fin de Grado: Past In Pixels — muy alabado por la tutora de proyecto",
+          "Proyecto descrito como único, creativo y rompedor · pastinpixel.vercel.app"
+        ],
+        "tags": ["DAW", "Desarrollo Web", "TFG: Past In Pixels"],
+        "highlight": false
+      },
+      {
+        "id": 4,
+        "period": "2023 — 2024",
+        "role": "Desarrolladora Web FullStack",
+        "company": "Hack A Boss — Bootcamp",
+        "location": "España",
+        "items": [
+          "Desarrollo de aplicaciones web completas con React, Node.js y MongoDB",
+          "Diseño de interfaces con Chakra UI y animaciones con Framer Motion",
+          "Arquitectura REST con Express y autenticación mediante JWT",
+          "Proyecto final: SafeMap, mapa colaborativo de zonas de riesgo"
+        ],
+        "tags": ["React", "Node.js", "MongoDB", "Express", "JWT"],
+        "highlight": false
+      },
+      {
+        "id": 5,
+        "period": "2010 — 2024",
+        "role": "Especialista en Comunicación Empresarial",
+        "company": "— Añade tu empresa o empresas —",
+        "location": "España",
+        "items": [
+          "Diseño y ejecución de estrategias de comunicación corporativa",
+          "Gestión de identidad de marca e imagen corporativa",
+          "Dirección de campañas de marketing digital (SEO, SEM, RRSS)",
+          "Analítica web con Google Analytics, SEMrush y Metricool",
+          "Creación de contenidos audiovisuales y gestión de comunidades"
+        ],
+        "tags": ["Comunicación", "Marketing Digital", "SEO", "Branding"],
+        "highlight": false
+      },
+      {
+        "id": 6,
+        "period": "Formación académica",
+        "role": "Periodismo y Comunicación",
+        "company": "— Añade tu universidad —",
+        "location": "España",
+        "items": [
+          "Licenciatura en Periodismo",
+          "Especialización en comunicación empresarial y digital"
+        ],
+        "tags": ["Periodismo", "Comunicación"],
+        "highlight": false
+      }
+    ]
+  },
+  "projects": {
+    "pageLabel": "portfolio",
+    "pageTitle": "Proyectos",
+    "pageDesc": "Aplicaciones desarrolladas desde cero, combinando diseño, funcionalidad y comunicación.",
+    "placeholder": "próximo proyecto",
+    "statusLive": "live",
+    "statusWip": "en desarrollo",
+    "statusSoon": "próximamente",
+    "pastinpixels": {
+      "title": "Past In Pixels",
+      "description": "Trabajo de Fin de Grado. Proyecto único, creativo y rompedor, muy alabado por la tutora. Una experiencia web que fusiona historia y tecnología."
+    },
+    "palmotion": {
+      "title": "PalMotion",
+      "description": "Aplicación de fitness y ejercicio. No hay excusas para moverte."
+    },
+    "movieselector": {
+      "title": "Movie Selector",
+      "description": "¿Sin plan para esta noche? Deja que la app elija la película por ti."
+    },
+    "safemap": {
+      "title": "SafeMap",
+      "description": "Mapa colaborativo donde los usuarios marcan zonas de riesgo o baja accesibilidad para ayudar a viajeros."
+    }
+  },
+  "safemap": {
+    "label": "proyecto final de bootcamp",
+    "p1": "Hoy en día viajar y conocer mundo es algo habitual. Las distancias se hacen cortas y el mundo interconectado en el que vivimos nos permite conocer lugares con los que, hasta hace no mucho, solo se podía soñar.",
+    "p2": "¿Pero sabemos cómo llegar? ¿Y cómo volver a nuestro alojamiento sin encontrarnos con impedimentos de accesibilidad o zonas peligrosas?",
+    "p3a": "De esa idea surge",
+    "p3b": ": un mapa donde poder colocar \"banderas rojas\" en espacios o calles públicos y advertir a otros usuarios de la aplicación."
+  },
+  "footer": {
+    "github": "GitHub"
+  }
+}

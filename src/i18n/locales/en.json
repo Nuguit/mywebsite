@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "about": "About",
+    "curriculum": "Resume",
+    "projects": "Projects"
+  },
+  "home": {
+    "label": "Full-Stack Developer · Journalist · Business Communication Specialist",
+    "desc1": "Creative and curious by nature.",
+    "desc2": "Passionate about technology and communication.",
+    "quote": "There's no such thing as \"I don't know\", only \"let's find out how\".",
+    "cta": "Explore profile →"
+  },
+  "about": {
+    "label": "about me",
+    "quote": "\"The art of communication is the language of leadership\"",
+    "author": "— James Humes",
+    "p1": "Humes was right. Only through effective and honest communication can we achieve our goals, both personally and professionally.",
+    "p2": "I have developed this vocation for over a decade, combining work experience with continuous training. I enjoy designing communication strategies, their visual elements, and everything related to conveying a brand's identity. A company's value doesn't lie in numbers, but in the emotions it creates.",
+    "p3a": "After spending over ten years dedicated exclusively to business communication, I decided to expand my horizons and add another branch to my knowledge:",
+    "p3highlight": "web development",
+    "p3b": ". Working with both front-end and back-end languages, the communicational experience I can now offer is complete: starting from scratch, we can build an entire corporate identity, design the strategy, and execute it."
+  },
+  "curriculum": {
+    "expLabel": "experience",
+    "expTitle": "Professional Background",
+    "stackLabel": "tech stack",
+    "stackTitle": "Languages & Tools",
+    "toolsLabel": "tools",
+    "toolsTitle": "Programs",
+    "cvCompany": "company",
+    "cvLocation": "location",
+    "cvDesc": "description",
+    "badgeCurrent": "current",
+    "entries": [
+      {
+        "id": 1,
+        "period": "2025 — Present",
+        "role": "Web Developer",
+        "company": "SEO Málaga",
+        "location": "Málaga, Spain",
+        "items": [
+          "Joined after completing the internship for the Higher Degree in Web Application Development",
+          "Internship supervisor: \"an already indispensable part of the company's workflow\"",
+          "Development and maintenance of web projects in a professional environment",
+          "Web application development using various languages and frameworks per project; WordPress and AI development"
+        ],
+        "tags": ["Web Development", "AI", "WordPress", "Current position"],
+        "highlight": true
+      },
+      {
+        "id": 7,
+        "period": "Currently",
+        "role": "Master's Degree in Web Development with AI",
+        "company": "The Big School · Universidad Isabel I",
+        "location": "Spain",
+        "items": [
+          "Advanced training in web development applied to artificial intelligence",
+          "Program in collaboration between The Big School and Universidad Isabel I"
+        ],
+        "tags": ["AI", "Web Development", "Master's Degree"],
+        "highlight": true
+      },
+      {
+        "id": 2,
+        "period": "2025",
+        "role": "Freelance — Web Redesign & Content",
+        "company": "Advokatkontoret.es",
+        "location": "Spain",
+        "items": [
+          "Redesign of key sections of the website",
+          "Implementation of multilingual support without plugins",
+          "Creation and editing of audiovisual content for the platform"
+        ],
+        "tags": ["WordPress", "Multilingual", "Audiovisual", "Web Design"],
+        "highlight": false
+      },
+      {
+        "id": 3,
+        "period": "2024 — 2026",
+        "role": "Higher Technician in Web Application Development",
+        "company": "Universidad Alfonso X El Sabio",
+        "location": "Madrid, Spain",
+        "items": [
+          "Higher Degree in Web Application Development (DAW)",
+          "Company internship: SEO Málaga",
+          "Final Project: Past In Pixels — highly praised by the project supervisor",
+          "Project described as unique, creative and groundbreaking · pastinpixel.vercel.app"
+        ],
+        "tags": ["DAW", "Web Development", "Final Project: Past In Pixels"],
+        "highlight": false
+      },
+      {
+        "id": 4,
+        "period": "2023 — 2024",
+        "role": "Full-Stack Web Developer",
+        "company": "Hack A Boss — Bootcamp",
+        "location": "Spain",
+        "items": [
+          "Full web application development with React, Node.js and MongoDB",
+          "UI design with Chakra UI and animations with Framer Motion",
+          "REST architecture with Express and JWT authentication",
+          "Final project: SafeMap, a collaborative risk zone mapping app"
+        ],
+        "tags": ["React", "Node.js", "MongoDB", "Express", "JWT"],
+        "highlight": false
+      },
+      {
+        "id": 5,
+        "period": "2010 — 2024",
+        "role": "Business Communication Specialist",
+        "company": "— Add your company or companies —",
+        "location": "Spain",
+        "items": [
+          "Design and execution of corporate communication strategies",
+          "Brand identity and corporate image management",
+          "Digital marketing campaign management (SEO, SEM, Social Media)",
+          "Web analytics with Google Analytics, SEMrush and Metricool",
+          "Audiovisual content creation and community management"
+        ],
+        "tags": ["Communication", "Digital Marketing", "SEO", "Branding"],
+        "highlight": false
+      },
+      {
+        "id": 6,
+        "period": "Academic background",
+        "role": "Journalism & Communication",
+        "company": "— Add your university —",
+        "location": "Spain",
+        "items": [
+          "Degree in Journalism",
+          "Specialization in business and digital communication"
+        ],
+        "tags": ["Journalism", "Communication"],
+        "highlight": false
+      }
+    ]
+  },
+  "projects": {
+    "pageLabel": "portfolio",
+    "pageTitle": "Projects",
+    "pageDesc": "Applications built from scratch, combining design, functionality, and communication.",
+    "placeholder": "next project",
+    "statusLive": "live",
+    "statusWip": "in progress",
+    "statusSoon": "coming soon",
+    "pastinpixels": {
+      "title": "Past In Pixels",
+      "description": "Final Degree Project. Unique, creative and groundbreaking — highly praised by the project supervisor. A web experience that fuses history and technology."
+    },
+    "palmotion": {
+      "title": "PalMotion",
+      "description": "Fitness and exercise app. No excuses to get moving."
+    },
+    "movieselector": {
+      "title": "Movie Selector",
+      "description": "No plans tonight? Let the app choose the movie for you."
+    },
+    "safemap": {
+      "title": "SafeMap",
+      "description": "Collaborative map where users flag dangerous or low-accessibility areas to help travelers."
+    }
+  },
+  "safemap": {
+    "label": "bootcamp final project",
+    "p1": "Traveling and exploring the world has become commonplace today. Distances feel short and the interconnected world we live in lets us visit places that, not long ago, could only be dreamed of.",
+    "p2": "But once we're there — do we know how to get around? How do we get back without running into accessibility issues or dangerous areas?",
+    "p3a": "That idea gave birth to",
+    "p3b": ": a map where users can place \"red flags\" on public spaces or streets to warn other users of the application."
+  },
+  "footer": {
+    "github": "GitHub"
+  }
+}
