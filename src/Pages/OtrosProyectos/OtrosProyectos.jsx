@@ -34,7 +34,7 @@ const projectsMeta = [
   },
   {
     slug: "eaglesinspain",
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["PHP", "HTML", "CSS", "JavaScript"],
     image: eagles,
     link: "https://eaglesinspain.free.nf/",
     internal: false,
