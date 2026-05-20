@@ -44,7 +44,7 @@ const SkillCard = ({ src, name }) => (
     onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(0, 229, 160, 0.12)"; e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.02)"; e.currentTarget.style.boxShadow = "none"; }}
   >
     <img src={src} alt={name} style={{ width: "48px", height: "48px", objectFit: "contain" }} />
-    <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.58rem", color: "#8892b0", letterSpacing: "1px", textTransform: "uppercase", textAlign: "center" }}>
+    <span style={{ fontFamily: "'Space Mono ', monospace", fontSize: "0.58rem", color: "#8892b0", letterSpacing: "1px", textTransform: "uppercase", textAlign: "center" }}>
       {name}
     </span>
   </div>
