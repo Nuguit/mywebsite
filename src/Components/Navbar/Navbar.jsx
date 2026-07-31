@@ -1,15 +1,18 @@
 import { Flex, Text } from "@chakra-ui/layout"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { useTranslation } from 'react-i18next'
 import NavigationLink from "../NavigationLink/NavigationLink"
 
 const Navbar = () => {
   const { t, i18n } = useTranslation()
+  const location = useLocation()
 
   const NAVIGATION_LINK = [
     { link: "/about", text: t('nav.about') },
     { link: "/curriculum", text: t('nav.curriculum') },
     { link: "/otrosproyectos", text: t('nav.projects') },
+    { link: "/faq", text: t('nav.faq') },
+    { link: "/contacto", text: t('nav.contact') },
   ]
 
   const toggleLang = (lang) => i18n.changeLanguage(lang)
@@ -17,6 +20,7 @@ const Navbar = () => {
 
   return (
     <Flex
+      as="header"
       direction={{ base: "column", md: "row" }}
       padding={{ base: "16px 24px", md: "0 60px" }}
       backgroundColor={"#0a0a0a"}
@@ -38,13 +42,14 @@ const Navbar = () => {
         </Text>
       </Link>
 
-      <Flex alignItems="center" gap={"40px"}>
+      <Flex as="nav" aria-label="Principal" alignItems="center" gap={"32px"}>
         {NAVIGATION_LINK.map(({ link, text }) => {
-          const isActiveLink = window.location.pathname === link
+          const isActiveLink = location.pathname === link
           return (
             <NavigationLink
               to={link}
               key={link}
+              aria-current={isActiveLink ? "page" : undefined}
               style={{ textDecoration: isActiveLink ? "underline" : "none" }}
             >
               <Text>{text}</Text>
@@ -53,6 +58,8 @@ const Navbar = () => {
         })}
 
         <Flex
+          role="group"
+          aria-label={t('nav.languageSwitcher')}
           alignItems="center"
           gap="2px"
           borderLeft="1px solid rgba(255,255,255,0.08)"
@@ -62,6 +69,8 @@ const Navbar = () => {
             <span key={lang}>
               <button
                 onClick={() => toggleLang(lang)}
+                aria-pressed={currentLang === lang}
+                aria-label={lang === 'es' ? 'Español' : 'English'}
                 style={{
                   background: 'none',
                   border: 'none',
@@ -78,7 +87,7 @@ const Navbar = () => {
                 {lang}
               </button>
               {i === 0 && (
-                <span style={{ color: 'rgba(255,255,255,0.15)', fontSize: '10px' }}>·</span>
+                <span style={{ color: 'rgba(255,255,255,0.15)', fontSize: '10px' }} aria-hidden="true">·</span>
               )}
             </span>
           ))}

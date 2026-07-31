@@ -1,54 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import safemap from "../SafeMap/safemap.png";
-import pastinpixels from "./pastinpixels.jpg";
-import palmotion from "./palmotion.jpg";
-import movieselector from "./movieselector.jpg";
-import eagles from "./eagles.jpeg";
-
-const projectsMeta = [
-  {
-    slug: "pastinpixels",
-    tags: ["React", "TFG", "DAW"],
-    image: pastinpixels,
-    link: "https://pastinpixel.vercel.app/",
-    internal: false,
-    status: "live",
-  },
-  {
-    slug: "palmotion",
-    tags: ["Python", "Streamlit"],
-    image: palmotion,
-    link: "https://palmotion.streamlit.app/",
-    internal: false,
-    status: "live",
-  },
-  {
-    slug: "movieselector",
-    tags: ["JavaScript", "HTML", "CSS", "API"],
-    image: movieselector,
-    link: "https://nuguit.github.io/cinema/",
-    internal: false,
-    status: "live",
-  },
-  {
-    slug: "eaglesinspain",
-    tags: ["PHP", "HTML", "CSS", "JavaScript"],
-    image: eagles,
-    link: "https://eaglesinspain.free.nf/",
-    internal: false,
-    status: "live",
-  },
-  {
-    slug: "safemap",
-    tags: ["React", "Node.js", "MongoDB", "Express", "JWT"],
-    image: safemap,
-    link: "/safemap",
-    internal: true,
-    status: "live",
-  },
-];
+import Seo from '../../Components/Seo/Seo';
+import useBreadcrumbs from '../../lib/useBreadcrumbs';
+import { breadcrumbSchema } from '../../lib/schema';
+import { projectsMeta } from './projectsData';
 
 const ProjectCard = ({ meta, t }) => {
   const statusColors = { live: "#00e5a0", wip: "#ffbd2e", soon: "#8892b0" };
@@ -58,9 +14,10 @@ const ProjectCard = ({ meta, t }) => {
     soon: t('projects.statusSoon'),
   };
 
-  const Wrapper = meta.internal ? Link : "a";
-  const wrapperProps = meta.internal
-    ? { to: meta.link, style: { textDecoration: "none" } }
+  const to = meta.caseStudy ? `/otrosproyectos/${meta.slug}` : meta.link;
+  const Wrapper = meta.caseStudy || meta.internal ? Link : "a";
+  const wrapperProps = meta.caseStudy || meta.internal
+    ? { to, style: { textDecoration: "none" } }
     : { href: meta.link, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none" } };
 
   return (
@@ -80,15 +37,27 @@ const ProjectCard = ({ meta, t }) => {
       >
         {meta.image && (
           <div style={{ borderBottom: "1px solid rgba(0, 229, 160, 0.1)", overflow: "hidden", height: "200px", backgroundColor: "#0d0d0d" }}>
-            <img src={meta.image} alt={t(`projects.${meta.slug}.title`)} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            <picture>
+              {(meta.imageWebpSmall || meta.imageWebp) && (
+                <source srcSet={meta.imageWebpSmall || meta.imageWebp} type="image/webp" />
+              )}
+              <img
+                src={meta.image}
+                alt={t(`projects.${meta.slug}.title`)}
+                width="400"
+                height="200"
+                loading="lazy"
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              />
+            </picture>
           </div>
         )}
 
         <div style={{ padding: "24px", display: "flex", flexDirection: "column", flex: 1 }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "12px" }}>
-            <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.8rem", color: "#ffffff", margin: 0, letterSpacing: "2px" }}>
+            <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.8rem", color: "#ffffff", margin: 0, letterSpacing: "2px" }}>
               {t(`projects.${meta.slug}.title`)}
-            </h3>
+            </h2>
             <span style={{
               fontFamily: "'Space Mono', monospace", fontSize: "0.6rem", padding: "3px 10px",
               border: `1px solid ${statusColors[meta.status]}`, color: statusColors[meta.status],
@@ -133,9 +102,17 @@ const PlaceholderCard = ({ t }) => (
 
 const OtrosProyectos = () => {
   const { t } = useTranslation();
+  const { crumbs } = useBreadcrumbs(t('projects.pageTitle'));
 
   return (
-    <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "60px 20px 60px", boxSizing: "border-box" }}>
+    <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "20px 20px 60px", boxSizing: "border-box" }}>
+      <Seo
+        title={t('projects.pageTitle')}
+        description={t('projects.pageDesc')}
+        path="/otrosproyectos"
+        jsonLd={[breadcrumbSchema(crumbs)]}
+      />
+
       <div style={{ marginBottom: "48px" }}>
         <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", color: "#00e5a0", letterSpacing: "3px", textTransform: "uppercase", margin: "0 0 10px" }}>
           {'// '}{t('projects.pageLabel')}

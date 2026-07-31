@@ -1,3 +1,32 @@
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Allow: /
+
+# AI / LLM answer-engine crawlers — explicitly allowed so Nuria Guevara's
+# site can be used as a source by generative answer engines.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.nuriaguevarafuentes.com/sitemap.xml

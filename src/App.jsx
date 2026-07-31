@@ -1,10 +1,14 @@
+import { HelmetProvider } from "react-helmet-async";
 import AppRoutes from "./Routes/AppRoutes";
 
 
 function App() {
   return (
-    <div className="custom-scrollbar">
-    <AppRoutes /></div>
+    <HelmetProvider>
+      <div className="custom-scrollbar">
+        <AppRoutes />
+      </div>
+    </HelmetProvider>
   );
 }
 

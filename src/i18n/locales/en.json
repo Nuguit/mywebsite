@@ -2,24 +2,109 @@
   "nav": {
     "about": "About",
     "curriculum": "Resume",
-    "projects": "Projects"
+    "projects": "Projects",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "languageSwitcher": "Language switcher"
   },
   "home": {
-    "label": "Full-Stack Developer · Journalist · Business Communication Specialist",
+    "seoDescription": "Nuria Guevara Fuentes, Full-Stack web developer specialized in React, Node.js and WordPress. Portfolio, projects and professional background.",
+    "label": "Full-Stack Developer · Web Development with AI",
     "desc1": "Creative and curious by nature.",
-    "desc2": "Passionate about technology and communication.",
+    "desc2": "Passionate about technology and web development.",
     "quote": "There's no such thing as \"I don't know\", only \"let's find out how\".",
-    "cta": "Explore profile →"
+    "cta": "Explore profile →",
+    "introLabel": "in short",
+    "introBody": "I'm Nuria Guevara Fuentes, a Full-Stack web developer specialized in React, Node.js and WordPress. I build web applications end to end — from architecture to interface — and I've worked on projects like SafeMap, a Full-Stack collaborative map, and Past In Pixels, my Final Degree Project. Right now I'm expanding my training with a Master's Degree in Web Development with AI.",
+    "introCta": "Read my full story →"
   },
   "about": {
     "label": "about me",
+    "seoTitle": "About Nuria Guevara — Full-Stack Web Developer",
+    "seoDescription": "Who is Nuria Guevara Fuentes: her experience as a Full-Stack web developer, the technologies she works with, the projects she's built and her work philosophy.",
     "quote": "\"The art of communication is the language of leadership\"",
     "author": "— James Humes",
     "p1": "Humes was right. Only through effective and honest communication can we achieve our goals, both personally and professionally.",
     "p2": "I have developed this vocation for over a decade, combining work experience with continuous training. I enjoy designing communication strategies, their visual elements, and everything related to conveying a brand's identity. A company's value doesn't lie in numbers, but in the emotions it creates.",
     "p3a": "After spending over ten years dedicated exclusively to business communication, I decided to expand my horizons and add another branch to my knowledge:",
     "p3highlight": "web development",
-    "p3b": ". Working with both front-end and back-end languages, the communicational experience I can now offer is complete: starting from scratch, we can build an entire corporate identity, design the strategy, and execute it."
+    "p3b": ". Working with both front-end and back-end languages, the communicational experience I can now offer is complete: starting from scratch, we can build an entire corporate identity, design the strategy, and execute it.",
+    "h1": "About me",
+    "intro": "My name is Nuria Guevara Fuentes and I'm a Full-Stack web developer. I currently work as a web developer and I'm studying a Master's Degree in Web Development with AI at The Big School and Universidad Isabel I. This page exists to answer, in detail and in first person, the question a one-page CV usually leaves unanswered: who I am, what I've built, and what I can bring to a team or a project.",
+    "sections": [
+      {
+        "title": "Who I am",
+        "body": [
+          "I'm a Full-Stack web developer. I work on both frontend and backend, I enjoy understanding a project end to end — from architecture to interface — and I don't settle for the first solution that works: I look for the one that holds up in the medium term. Before web development, I spent over a decade working in communication; it's an anecdotal chapter in my day-to-day work now, but it left me with a habit I still apply when coding: understanding who and what I'm building something for before anything else.",
+          "I'm curious by nature. I enjoy solving a logic problem in JavaScript just as much as digging into a new technology until I really understand it, and I'd rather be the person who understands a project end to end, from the architecture down to the last detail of the interface."
+        ]
+      },
+      {
+        "title": "My path into web development",
+        "body": [
+          "My formal entry into web development was the Full-Stack bootcamp at IMMUNE Technology Institute (2023–2024), where I learned to build complete web applications with React, Node.js and MongoDB, design interfaces with Chakra UI, animate with Framer Motion, and set up REST architectures with Express and JWT authentication. It was an intense learn-by-building process: a new technology every week, and a real project to put it to the test. The bootcamp's final project was SafeMap, a collaborative risk-zone map for travelers, which is still one of the projects I've learned the most from.",
+          "After the bootcamp, I decided to formalize and deepen that knowledge with the Higher Degree in Web Application Development (DAW) at Universidad Alfonso X El Sabio (2024–2026), where I did an internship and built my Final Degree Project, Past In Pixels, which my supervisor described as unique, creative and groundbreaking. Right now I'm continuing my training with a Master's Degree in Web Development with AI, in collaboration between The Big School and Universidad Isabel I, because in this field training never really ends: technology keeps changing, and standing still isn't an option."
+        ]
+      },
+      {
+        "title": "My professional experience",
+        "body": [
+          "I currently work as a web developer at the company I joined after finishing my internship for the DAW degree. There I develop and maintain web projects in a real professional environment, working with different languages and frameworks depending on each project's needs, including WordPress and AI-applied development. I also mentor new interns — a role my own company has described as an already indispensable part of the team's workflow.",
+          "In parallel, I've worked as a freelancer for Advokatkontoret.es (2025), where I redesigned key sections of the website, implemented multilingual support without relying on plugins, and created and edited audiovisual content for the platform.",
+          "Before web development, I spent over a decade working in communication — as a community manager, a reporter and a press officer. It's an anecdotal chapter in my day-to-day work now, but it left me with a habit I still apply: always understanding who and what I'm building something for before writing the first line of code."
+        ]
+      },
+      {
+        "title": "Technologies I work with",
+        "body": [
+          "Day to day I work with JavaScript, HTML and CSS as a foundation, React on the frontend, and Node.js with Express on the backend, usually with MongoDB or MySQL as the data layer depending on what the project needs. I've built JWT authentication, designed interfaces with Chakra UI and Bootstrap, and added animations with Framer Motion when the user experience calls for it. I also work with PHP — my first project in this language was Eagles in Spain — and with WordPress, which I use daily in my current role.",
+          "I round out that stack with Python, Postman for testing and documenting APIs, and Git and GitHub for version control, plus Laravel. On occasion I also use digital analytics tools like Google Analytics or SEMrush, an extra that comes from my previous stage in communication."
+        ]
+      },
+      {
+        "title": "The kind of projects I enjoy",
+        "body": [
+          "I especially enjoy projects that aren't just a technical exercise but solve a real problem and have their own identity. SafeMap was born from a very specific question — do we actually know how to move safely around a place we don't know? — and became a full collaborative application, built with React, Node.js, MongoDB, Express and JWT, where users flag dangerous or low-accessibility areas to help other travelers.",
+          "Past In Pixels, my Final Degree Project, is the project I'm proudest of: a web experience built with React that fuses history and technology, described by my supervisor as unique, creative and groundbreaking. I also particularly enjoyed building Eagles in Spain, my first PHP project and an intermodular project for the DAW degree, dedicated to the Spanish community of Philadelphia Eagles fans — proof that a technical project can simply be born out of a hobby.",
+          "In general, I'm drawn to projects where I can be involved end to end: understanding the goal, proposing the architecture, building the interface and solving the technical problems that come up along the way. That's why I still enjoy experimenting with different formats, like PalMotion (a fitness app built with Python and Streamlit) or Movie Selector (a small JavaScript app that consumes an external API to recommend movies)."
+        ]
+      },
+      {
+        "title": "How I approach problems",
+        "body": [
+          "Faced with a problem, my first instinct is to investigate rather than assume. When something doesn't work, I don't assume I already know the cause: I read the error, reproduce the bug, check the documentation and rule out hypotheses one by one until I find the real root cause, not just the symptom. It's a verification discipline I bring from my previous stage in communication — checking before assuming — but that I apply exclusively to code today.",
+          "It also helps that I'm not afraid to say I don't know something yet. In a field that keeps changing, pretending to know everything is the fastest way to stop learning. I'd rather acknowledge the current limit of my knowledge and get to work on closing it — which is exactly the idea behind the phrase that best sums up how I work."
+        ]
+      },
+      {
+        "title": "My philosophy",
+        "body": [
+          "\"There's no such thing as 'I don't know', only 'let's find out how'.\" This isn't a slogan — it's literally how I've built my career. I went from not knowing how to code to building complete Full-Stack applications because, every time I hit a limit, my response was to find a way past it — a bootcamp, a higher degree, a master's, a new freelance project — instead of accepting the limit as final.",
+          "I apply that same philosophy inside every project: if I don't yet know a specific technology a project needs, that's not a blocker, it's just the next item on the list. And I firmly believe in something that still holds true in development: a project's value isn't only in the numbers or the lines of code, but in the experience it creates for the person using it."
+        ]
+      },
+      {
+        "title": "How I work",
+        "body": [
+          "I work methodically: I like to understand the full context of a project before writing the first line of code — who's going to use it, what problem it solves, what technical constraints I'm working within — and document the important decisions as I go.",
+          "I'm comfortable working independently — as in my freelance projects, where I manage the project end to end — and within a team, where I currently also mentor colleagues who are joining. I pay particular attention to technical communication within the team: explaining decisions clearly, documenting what I build, and keeping everyone in the loop on progress."
+        ]
+      },
+      {
+        "title": "What I bring to a team",
+        "body": [
+          "I bring real technical ability in Full-Stack development: I can build a feature end to end, from architecture to interface, and document it so the rest of the team can follow along. I also mentor interns at my current company, which pushes me to explain technical decisions clearly, not just make them.",
+          "On top of that, as an anecdotal differentiator, I bring over ten years of prior experience in communication: I understand why a feature matters to the end user, not just how to build it. And above all, I bring the attitude summed up in my work philosophy: faced with any new challenge, my default response is to find out how to solve it, not to explain why it can't be done."
+        ]
+      },
+      {
+        "title": "What I'm looking for professionally",
+        "body": [
+          "I'm looking for projects and teams where I can keep growing as a Full-Stack developer: React, Node.js and the technologies I work with daily, in environments where well-built code matters as much as the result it produces. I'm especially interested in everything related to web development applied to artificial intelligence, the area I'm currently expanding my training in through the Master's at The Big School and Universidad Isabel I.",
+          "If you have a project, an opening, or just want to talk about web development, you'll find my details on the contact page. And if you ask me whether I know how to do something I haven't fully mastered yet, you already know my answer: there's no such thing as 'I don't know', only 'let's find out how'."
+        ]
+      }
+    ]
   },
   "curriculum": {
     "expLabel": "experience",
@@ -94,7 +179,7 @@
         "id": 4,
         "period": "2023 — 2024",
         "role": "Full-Stack Web Developer",
-        "company": "Hack A Boss — Bootcamp",
+        "company": "IMMUNE Technology Institute — Bootcamp",
         "location": "Spain",
         "items": [
           "Full web application development with React, Node.js and MongoDB",
@@ -109,24 +194,27 @@
         "id": 5,
         "period": "2010 — 2024",
         "role": "Business Communication Specialist",
-        "company": "— Add your company or companies —",
+        "company": "Real estate agency · Benaoján TV · Public Administration",
         "location": "Spain",
         "items": [
+          "Community manager at a real estate agency",
+          "Reporter at Benaoján TV",
+          "Press officer at a Public Administration body (2015 — 2023)",
           "Design and execution of corporate communication strategies",
           "Brand identity and corporate image management",
           "Digital marketing campaign management (SEO, SEM, Social Media)",
           "Web analytics with Google Analytics, SEMrush and Metricool",
           "Audiovisual content creation and community management"
         ],
-        "tags": ["Communication", "Digital Marketing", "SEO", "Branding"],
+        "tags": ["Communication", "Journalism", "Digital Marketing", "SEO", "Branding"],
         "highlight": false
       },
       {
         "id": 6,
         "period": "Academic background",
         "role": "Journalism & Communication",
-        "company": "— Add your university —",
-        "location": "Spain",
+        "company": "University of Málaga",
+        "location": "Málaga, Spain",
         "items": [
           "Degree in Journalism",
           "Specialization in business and digital communication"
@@ -144,25 +232,66 @@
     "statusLive": "live",
     "statusWip": "in progress",
     "statusSoon": "coming soon",
+    "caseStudyProblem": "Problem",
+    "caseStudyGoals": "Goals",
+    "caseStudyArchitecture": "Architecture",
+    "caseStudyTech": "Technologies",
+    "caseStudyChallenges": "Challenges",
+    "caseStudySolution": "Solution",
+    "caseStudyResult": "Result",
+    "caseStudyVisit": "Visit project",
     "pastinpixels": {
       "title": "Past In Pixels",
-      "description": "Final Degree Project. Unique, creative and groundbreaking — highly praised by the project supervisor. A web experience that fuses history and technology."
+      "description": "Final Degree Project. Unique, creative and groundbreaking — highly praised by the project supervisor. A web experience that fuses history and technology.",
+      "seoDescription": "Case study of Past In Pixels, Nuria Guevara's Final Degree Project: a React web experience that fuses history and technology.",
+      "problem": "The Final Degree Project for the Higher Degree in Web Application Development had to prove the ability to build a complete web application with its own identity, solo, not a generic academic exercise.",
+      "goals": "Design and build a web experience that fused history and technology, applying everything learned during the Higher Degree and bringing a creative, distinctive angle to it.",
+      "architecture": "Application built with React on the frontend, following a component-based architecture typical of the React ecosystem.",
+      "technologies": "React, JavaScript, HTML, CSS.",
+      "challenges": "Combining technical rigor with a creative, visually groundbreaking proposal within the timeline and requirements of a Final Degree Project.",
+      "solution": "Full development of the project with React, taking care of both the code architecture and the narrative and visual experience of the final result.",
+      "result": "Project described by the project supervisor as unique, creative and groundbreaking — the highest qualitative recognition one of her academic projects has received."
     },
     "palmotion": {
       "title": "PalMotion",
-      "description": "Fitness and exercise app. No excuses to get moving."
+      "description": "Fitness and exercise app. No excuses to get moving.",
+      "seoDescription": "Case study of PalMotion, a fitness app built by Nuria Guevara with Python and Streamlit.",
+      "problem": "The lack of a simple tool that motivates and guides people to exercise without excuses or usage friction.",
+      "goals": "Build a functional, accessible fitness app, exploring Python as a language for web applications beyond the usual JavaScript stack.",
+      "architecture": "Web application built on Streamlit, a Python framework designed to turn data scripts into interactive applications.",
+      "technologies": "Python, Streamlit.",
+      "challenges": "Designing a polished user experience within the constraints of a data-oriented framework like Streamlit.",
+      "solution": "Full development of the app in Python with Streamlit, prioritizing ease of use over the usual friction of fitness apps.",
+      "result": "Functional application, deployed and publicly available on Streamlit Cloud."
     },
     "movieselector": {
       "title": "Movie Selector",
-      "description": "No plans tonight? Let the app choose the movie for you."
+      "description": "No plans tonight? Let the app choose the movie for you.",
+      "seoDescription": "Case study of Movie Selector, a JavaScript app by Nuria Guevara that consumes an external API to recommend movies.",
+      "problem": "Not being able to decide what movie to watch is a small but universal problem.",
+      "goals": "Build a lightweight vanilla JavaScript application to solve that problem by consuming data from an external movie API.",
+      "architecture": "Frontend application in HTML, CSS and JavaScript that makes requests to an external API and renders the results dynamically.",
+      "technologies": "JavaScript, HTML, CSS, external API.",
+      "challenges": "Handling an external API's requests and asynchronous responses without relying on a framework, using vanilla JavaScript.",
+      "solution": "Implementation of the API consumption logic and dynamic rendering of results with vanilla JavaScript.",
+      "result": "Functional application, published and publicly accessible."
     },
     "eaglesinspain": {
       "title": "Eagles in Spain",
-      "description": "Intermodular project for the Higher Degree in Web Development and first project built with PHP. Website dedicated to the Philadelphia Eagles community in Spain."
+      "description": "Intermodular project for the Higher Degree in Web Development and first project built with PHP. Website dedicated to the Philadelphia Eagles community in Spain.",
+      "seoDescription": "Case study of Eagles in Spain, Nuria Guevara's first PHP project: a website for the Spanish Philadelphia Eagles community.",
+      "problem": "The Spanish community of Philadelphia Eagles (NFL) fans didn't have a website of its own, and the Higher Degree in Web Development required an intermodular project integrating several subjects.",
+      "goals": "Build, as a first project in PHP, a website dedicated to this community, integrating knowledge from several modules of the Higher Degree in a single build.",
+      "architecture": "Website built with PHP on the backend and HTML, CSS and JavaScript on the frontend.",
+      "technologies": "PHP, HTML, CSS, JavaScript.",
+      "challenges": "Learning PHP from scratch while integrating, in the same project, the requirements of several different subjects from the Higher Degree.",
+      "solution": "Full development of the site in PHP, HTML, CSS and JavaScript, meeting the requirements of every module involved in the intermodular project.",
+      "result": "First project completed with PHP, and an intermodular project successfully delivered within the Higher Degree in Web Development."
     },
     "safemap": {
       "title": "SafeMap",
-      "description": "Collaborative map where users flag dangerous or low-accessibility areas to help travelers."
+      "description": "Collaborative map where users flag dangerous or low-accessibility areas to help travelers.",
+      "seoDescription": "Case study of SafeMap, Nuria Guevara's Full-Stack bootcamp final project: a collaborative map built with React, Node.js, MongoDB, Express and JWT."
     }
   },
   "safemap": {
@@ -170,9 +299,225 @@
     "p1": "Traveling and exploring the world has become commonplace today. Distances feel short and the interconnected world we live in lets us visit places that, not long ago, could only be dreamed of.",
     "p2": "But once we're there — do we know how to get around? How do we get back without running into accessibility issues or dangerous areas?",
     "p3a": "That idea gave birth to",
-    "p3b": ": a map where users can place \"red flags\" on public spaces or streets to warn other users of the application."
+    "p3b": ": a map where users can place \"red flags\" on public spaces or streets to warn other users of the application.",
+    "seoDescription": "SafeMap: a collaborative risk-zone map, Nuria Guevara's Full-Stack bootcamp final project, built with React, Node.js, MongoDB, Express and JWT.",
+    "problem": "Traveling to unfamiliar places is increasingly common, but it isn't always easy to know which streets or areas have safety risks or accessibility issues before arriving.",
+    "goals": "Build a collaborative application where any user can flag risky or low-accessibility areas on a map, to help other travelers move around with more information.",
+    "architecture": "Full-Stack application: React frontend with Chakra UI and Framer Motion animations, Node.js backend with Express following a REST architecture, MongoDB database, and JWT authentication.",
+    "technologiesList": "React, Node.js, MongoDB, Express, JWT, Chakra UI, Framer Motion.",
+    "challenges": "Designing a collaborative geographic data model and secure JWT authentication within the tight timeline of a bootcamp final project.",
+    "solution": "Full development of the application as part of the IMMUNE Technology Institute bootcamp team, covering frontend, backend, database and authentication end to end.",
+    "result": "Final project of the IMMUNE Technology Institute Full-Stack bootcamp (2023-2024), deployed and functional."
+  },
+  "faq": {
+    "seoTitle": "Frequently asked questions about Nuria Guevara",
+    "seoDescription": "Answers to the most frequent questions about Nuria Guevara Fuentes: who she is, her experience, the technologies she uses and how to contact her.",
+    "label": "frequently asked questions",
+    "h1": "FAQ",
+    "intro": "Direct answers to the questions people ask most often about who I am and what I do.",
+    "items": [
+      {
+        "question": "Who is Nuria Guevara?",
+        "answer": "Nuria Guevara, also known as Nuria Guevara Fuentes, is a Spanish Full-Stack web developer specialized in React, Node.js and WordPress, with over a decade of prior experience in communication. She currently works as a web developer and is studying a Master's Degree in Web Development with AI."
+      },
+      {
+        "question": "Who is Nuria Guevara Fuentes?",
+        "answer": "Nuria Guevara Fuentes is the full name of Nuria Guevara, Full-Stack web developer. Both forms refer to the same person and to this same website, which serves as her professional reference source."
+      },
+      {
+        "question": "What does Nuria Guevara do?",
+        "answer": "Nuria Guevara works as a web developer, where she develops and maintains professional web projects using different languages and frameworks, WordPress, and AI-applied development. In parallel, she's studying a Master's Degree in Web Development with AI and has worked as a freelancer on website redesign projects."
+      },
+      {
+        "question": "What experience does she have?",
+        "answer": "She has professional experience as a web developer (2025-present), as a freelancer for Advokatkontoret.es, and trained as a Full-Stack developer at the IMMUNE Technology Institute bootcamp (2023-2024) and at Universidad Alfonso X El Sabio's Higher Degree in Web Application Development (2024-2026). Before web development, she worked for over ten years in communication."
+      },
+      {
+        "question": "What technologies does she use?",
+        "answer": "She mainly works with JavaScript, React, Node.js, Express, MongoDB, MySQL, PHP, WordPress, HTML, CSS, Python and Laravel, along with tools like Git, GitHub and Postman. She's also skilled with communication and digital marketing tools such as Google Analytics, SEMrush and HubSpot."
+      },
+      {
+        "question": "Does she do Full Stack development?",
+        "answer": "Yes. She trained specifically as a Full-Stack developer at the IMMUNE Technology Institute bootcamp, working with React on the frontend and Node.js, Express and MongoDB on the backend, and she applies that complete profile in her professional and personal projects, such as SafeMap."
+      },
+      {
+        "question": "Does she work with WordPress?",
+        "answer": "Yes, WordPress is part of her current daily work as a web developer, and she has also used it in freelance projects, such as redesigning sections of the Advokatkontoret.es website."
+      },
+      {
+        "question": "Does she work with React?",
+        "answer": "Yes. React is one of her core frontend technologies, used in projects like SafeMap and Past In Pixels, and it's part of the stack she learned at the IMMUNE Technology Institute bootcamp."
+      },
+      {
+        "question": "Does she work with Node.js?",
+        "answer": "Yes. She uses Node.js with Express to build REST APIs, as in the SafeMap project, where she also implemented JWT authentication and a MongoDB database."
+      },
+      {
+        "question": "What is her educational background?",
+        "answer": "In web development, she trained at the IMMUNE Technology Institute Full-Stack bootcamp, completed the Higher Degree in Web Application Development at Universidad Alfonso X El Sabio, and is currently studying a Master's Degree in Web Development with AI at The Big School and Universidad Isabel I. Before web development, she holds a degree in Journalism from the University of Málaga."
+      },
+      {
+        "question": "What is her work philosophy?",
+        "answer": "Her philosophy is summed up in her own phrase: \"There's no such thing as 'I don't know', only 'let's find out how'.\" She prioritizes research and finding solutions over writing a problem off as impossible."
+      },
+      {
+        "question": "Is she available for projects?",
+        "answer": "To check availability for projects, freelance collaborations or job openings, the best way is to reach out directly through the contact page."
+      },
+      {
+        "question": "Where can I contact her?",
+        "answer": "You can contact Nuria Guevara by email at nuria@nuriaguevarafuentes.com, through her LinkedIn profile, or through her GitHub profile. All the links are available on the contact page."
+      }
+    ]
+  },
+  "contact": {
+    "seoTitle": "Contact — Nuria Guevara",
+    "seoDescription": "How to contact Nuria Guevara: email, LinkedIn and GitHub. Full-Stack web developer available for projects and collaborations.",
+    "label": "contact",
+    "h1": "Let's talk",
+    "intro": "If you have a project in mind, a job opening, or you just want to talk about web development, communication, or how to combine both, here are all the ways to reach me.",
+    "emailLabel": "email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "availability": "Available for freelance projects and new professional opportunities."
+  },
+  "blog": {
+    "seoTitle": "Nuria Guevara's technical blog",
+    "seoDescription": "Nuria Guevara's technical blog about React, Node.js, WordPress, PHP, JavaScript, architecture and web development best practices. Coming soon.",
+    "label": "blog",
+    "h1": "Blog",
+    "intro": "This is where I'll be publishing technical articles about web development. There are no articles published yet, but here's the category structure I'll be filling in with real content.",
+    "comingSoon": "coming soon",
+    "categories": [
+      "React", "Node.js", "Express", "WordPress", "PHP",
+      "JavaScript", "Architecture", "Best practices", "Testing", "Security"
+    ]
+  },
+  "technologies": {
+    "hubLabel": "tech stack",
+    "experienceTitle": "My experience",
+    "projectsTitle": "Projects where I've used it",
+    "practicesTitle": "Best practices I apply",
+    "toolsTitle": "Related tools",
+    "react": {
+      "name": "React",
+      "seoTitle": "React — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with React: real projects, best practices and tools from the React ecosystem.",
+      "intro": "React is my main library for building frontend interfaces.",
+      "experience": "I learned React intensively at the IMMUNE Technology Institute Full-Stack bootcamp (2023-2024) and have used it ever since as the foundation of my frontend projects, combining it with Chakra UI for interfaces and Framer Motion for animations.",
+      "projects": ["safemap", "pastinpixels"],
+      "practices": [
+        "Reusable components with clear single responsibilities",
+        "State management with hooks (useState, useEffect)",
+        "Routing with React Router",
+        "Accessible interfaces combined with Framer Motion animations"
+      ],
+      "tools": ["Chakra UI", "Framer Motion", "GitHub", "Postman"]
+    },
+    "nodejs": {
+      "name": "Node.js",
+      "seoTitle": "Node.js — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with Node.js: REST APIs with Express, JWT authentication and real projects.",
+      "intro": "Node.js is the foundation of my backend in Full-Stack projects.",
+      "experience": "I used Node.js alongside Express and MongoDB to build SafeMap's entire backend during the IMMUNE Technology Institute bootcamp, including the REST architecture and user authentication.",
+      "projects": ["safemap"],
+      "practices": [
+        "REST architecture with Express",
+        "Authentication and authorization with JWT",
+        "Separation of routes, controllers and models",
+        "Endpoint testing and documentation with Postman"
+      ],
+      "tools": ["Express", "MongoDB", "JWT", "Postman"]
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "seoTitle": "JavaScript — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with JavaScript, the base language of all her frontend and backend projects.",
+      "intro": "JavaScript is the language behind most of my projects, with or without a framework.",
+      "experience": "I use it both in projects with React and Node.js and in vanilla JavaScript projects, like Movie Selector, where I consume an external API without relying on any framework.",
+      "projects": ["safemap", "pastinpixels", "movieselector", "eaglesinspain"],
+      "practices": [
+        "Vanilla JavaScript when a project doesn't need a framework",
+        "Consuming external APIs with fetch and handling promises",
+        "Modular, readable code",
+        "Version control with Git and GitHub"
+      ],
+      "tools": ["Git", "GitHub", "Postman"]
+    },
+    "php": {
+      "name": "PHP",
+      "seoTitle": "PHP — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with PHP, from her first project (Eagles in Spain) to her current professional use.",
+      "intro": "PHP was my first backend language outside the JavaScript ecosystem.",
+      "experience": "My first PHP project was Eagles in Spain, an intermodular project for the Higher Degree in Web Development. I've kept using PHP since then in my current professional role, where I work with different languages and frameworks depending on each project.",
+      "projects": ["eaglesinspain"],
+      "practices": [
+        "PHP backend combined with HTML, CSS and JavaScript",
+        "Clear, maintainable project structure",
+        "Best practices learned in a real professional environment"
+      ],
+      "tools": ["GitHub"]
+    },
+    "wordpress": {
+      "name": "WordPress",
+      "seoTitle": "WordPress — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with WordPress in her current role and in freelance projects.",
+      "intro": "WordPress is part of my daily work in my current role.",
+      "experience": "In my current role I develop and maintain web projects with WordPress as part of my regular work. I've also used it as a freelancer to redesign key sections of the Advokatkontoret.es website, where I also implemented multilingual support without relying on plugins.",
+      "projects": [],
+      "practices": [
+        "Redesigning sections without breaking the rest of the site",
+        "Multilingual support without relying on extra plugins",
+        "Maintenance and development in a professional environment"
+      ],
+      "tools": ["WordPress"]
+    },
+    "mysql": {
+      "name": "MySQL",
+      "seoTitle": "MySQL — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with MySQL as part of her relational database stack.",
+      "intro": "MySQL is the relational database I use when a project calls for it.",
+      "experience": "It's been part of my technical stack since training at the Higher Degree in Web Application Development, and I use it in professional projects that need a relational database, in combination with PHP or Laravel.",
+      "projects": [],
+      "practices": [
+        "Designing normalized relational schemas",
+        "Efficient SQL queries",
+        "Integration with PHP and Laravel backends"
+      ],
+      "tools": ["Laravel"]
+    },
+    "mongodb": {
+      "name": "MongoDB",
+      "seoTitle": "MongoDB — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with MongoDB as a NoSQL database in Full-Stack projects with Node.js.",
+      "intro": "MongoDB is my go-to NoSQL database in Full-Stack projects with Node.js.",
+      "experience": "I used it as SafeMap's database, alongside Node.js and Express, to store both users and the risk zones flagged by the community. I learned it during the IMMUNE Technology Institute Full-Stack bootcamp.",
+      "projects": ["safemap"],
+      "practices": [
+        "Document-oriented data modeling",
+        "Integration with Express via Mongoose",
+        "Schema design tailored to collaborative applications"
+      ],
+      "tools": ["Express", "Postman"]
+    },
+    "api": {
+      "name": "API / REST",
+      "seoTitle": "REST APIs — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience building and consuming REST APIs, with Express and JWT on the backend and fetch on the frontend.",
+      "intro": "Building and consuming REST APIs is a core part of my Full-Stack work.",
+      "experience": "I built a complete REST API with Express and JWT authentication for SafeMap, and I've consumed external APIs from the frontend in projects like Movie Selector. I use Postman daily to test and document endpoints.",
+      "projects": ["safemap", "movieselector"],
+      "practices": [
+        "Designing clear, predictable REST endpoints",
+        "Authentication and authorization with JWT",
+        "Documenting and testing endpoints with Postman",
+        "Consuming external APIs from the frontend with fetch"
+      ],
+      "tools": ["Postman", "Express", "JWT"]
+    }
   },
   "footer": {
-    "github": "GitHub"
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   }
 }

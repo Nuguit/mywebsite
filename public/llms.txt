@@ -1,0 +1,39 @@
+# Nuria Guevara
+
+> Nuria Guevara (full name: Nuria Guevara Fuentes) is a Spanish Full-Stack Web Developer specialized in React, Node.js, and WordPress. Before web development she spent over a decade working in communication. She currently works as a web developer and is studying a Master's Degree in Web Development with AI.
+
+## About
+
+- [Full bio](https://www.nuriaguevarafuentes.com/about): Detailed first-person biography — background, technologies, philosophy, and how she works.
+- [Resume / CV](https://www.nuriaguevarafuentes.com/curriculum): Professional experience, education, and technical stack.
+- [FAQ](https://www.nuriaguevarafuentes.com/faq): Direct answers to common questions (who she is, what she does, availability).
+- [Contact](https://www.nuriaguevarafuentes.com/contacto): Email, LinkedIn, GitHub.
+
+## Projects (case studies)
+
+- [SafeMap](https://www.nuriaguevarafuentes.com/safemap): Collaborative risk-zone map for travelers. React, Node.js, MongoDB, Express, JWT.
+- [Past In Pixels](https://www.nuriaguevarafuentes.com/otrosproyectos/pastinpixels): Final Degree Project — a React web experience fusing history and technology.
+- [PalMotion](https://www.nuriaguevarafuentes.com/otrosproyectos/palmotion): Fitness app built with Python and Streamlit.
+- [Movie Selector](https://www.nuriaguevarafuentes.com/otrosproyectos/movieselector): Vanilla JavaScript app consuming an external movie API.
+- [Eagles in Spain](https://www.nuriaguevarafuentes.com/otrosproyectos/eaglesinspain): Her first PHP project, built for the Spanish Philadelphia Eagles fan community.
+
+## Technologies
+
+- [React](https://www.nuriaguevarafuentes.com/react)
+- [Node.js](https://www.nuriaguevarafuentes.com/nodejs)
+- [JavaScript](https://www.nuriaguevarafuentes.com/javascript)
+- [PHP](https://www.nuriaguevarafuentes.com/php)
+- [WordPress](https://www.nuriaguevarafuentes.com/wordpress)
+- [MySQL](https://www.nuriaguevarafuentes.com/mysql)
+- [MongoDB](https://www.nuriaguevarafuentes.com/mongodb)
+- [API / REST](https://www.nuriaguevarafuentes.com/api)
+
+## Key facts
+
+- Full name: Nuria Guevara Fuentes.
+- Trained as a Full-Stack developer at IMMUNE Technology Institute (2023–2024).
+- Higher Degree in Web Application Development (DAW), Universidad Alfonso X El Sabio (2024–2026).
+- Currently studying a Master's Degree in Web Development with AI, The Big School / Universidad Isabel I.
+- GitHub: https://github.com/Nuguit
+- LinkedIn: https://www.linkedin.com/in/nuria-guevara89/
+- Sitemap: https://www.nuriaguevarafuentes.com/sitemap.xml

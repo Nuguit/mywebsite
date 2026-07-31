@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import Seo from '../../Components/Seo/Seo';
+import useBreadcrumbs from '../../lib/useBreadcrumbs';
+import { breadcrumbSchema } from '../../lib/schema';
+import { TECH_TAG_PATHS } from '../OtrosProyectos/projectsData';
 import html from "../SobreMi/html.svg";
 import css from "../SobreMi/css.svg";
 import javascript from "../SobreMi/javascript.svg";
@@ -37,36 +42,49 @@ const cardBase = {
   cursor: "default", transition: "all 0.25s ease",
 };
 
-const SkillCard = ({ src, name }) => (
-  <div
-    style={cardBase}
-    onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(0, 229, 160, 0.45)"; e.currentTarget.style.backgroundColor = "rgba(0, 229, 160, 0.06)"; e.currentTarget.style.boxShadow = "0 0 24px rgba(0, 229, 160, 0.1)"; }}
-    onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(0, 229, 160, 0.12)"; e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.02)"; e.currentTarget.style.boxShadow = "none"; }}
-  >
-    <img src={src} alt={name} style={{ width: "48px", height: "48px", objectFit: "contain" }} />
-    <span style={{ fontFamily: "'Space Mono ', monospace", fontSize: "0.58rem", color: "#8892b0", letterSpacing: "1px", textTransform: "uppercase", textAlign: "center" }}>
-      {name}
-    </span>
-  </div>
-);
+const SkillCard = ({ src, name }) => {
+  const content = (
+    <div
+      style={cardBase}
+      onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(0, 229, 160, 0.45)"; e.currentTarget.style.backgroundColor = "rgba(0, 229, 160, 0.06)"; e.currentTarget.style.boxShadow = "0 0 24px rgba(0, 229, 160, 0.1)"; }}
+      onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(0, 229, 160, 0.12)"; e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.02)"; e.currentTarget.style.boxShadow = "none"; }}
+    >
+      <img src={src} alt={name} width="48" height="48" loading="lazy" style={{ width: "48px", height: "48px", objectFit: "contain" }} />
+      <span style={{ fontFamily: "'Space Mono ', monospace", fontSize: "0.58rem", color: "#8892b0", letterSpacing: "1px", textTransform: "uppercase", textAlign: "center" }}>
+        {name}
+      </span>
+    </div>
+  );
+
+  const path = TECH_TAG_PATHS[name];
+  if (path) {
+    return <Link to={path} style={{ textDecoration: "none", color: "inherit" }}>{content}</Link>;
+  }
+  return content;
+};
 
 const SectionHeader = ({ label, title }) => (
   <div style={{ marginTop: "60px", marginBottom: "28px" }}>
     <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", color: "#00e5a0", letterSpacing: "3px", textTransform: "uppercase", margin: "0 0 8px" }}>
       {'// '}{label}
     </p>
-    <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "2.4rem", color: "#ffffff", margin: 0, letterSpacing: "2px" }}>
+    <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "2.4rem", color: "#ffffff", margin: 0, letterSpacing: "2px" }}>
       {title}
-    </h3>
+    </h2>
   </div>
 );
 
 const CvEntry = ({ entry, index, t }) => {
   const [open, setOpen] = useState(index === 0);
+  const panelId = `cv-panel-${entry.id}`;
+  const buttonId = `cv-button-${entry.id}`;
 
   return (
     <div style={{ borderLeft: "1px solid rgba(0, 229, 160, 0.18)", marginBottom: "4px" }}>
       <button
+        id={buttonId}
+        aria-expanded={open}
+        aria-controls={panelId}
         onClick={() => setOpen(o => !o)}
         style={{
           width: "100%", background: "none", border: "none", padding: "14px 20px",
@@ -104,16 +122,22 @@ const CvEntry = ({ entry, index, t }) => {
         </span>
       </button>
 
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="content"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.28, ease: "easeInOut" }}
-            style={{ overflow: "hidden" }}
-          >
+      {/*
+        Always mounted (not conditionally rendered) so this content stays in
+        the DOM — and therefore in the prerendered/crawlable HTML — even
+        while visually collapsed. Only the height/opacity animate; nothing
+        unmounts. This keeps every CV entry's detail crawlable regardless of
+        its default open/closed accordion state.
+      */}
+      <motion.div
+        id={panelId}
+        role="region"
+        aria-labelledby={buttonId}
+        initial={false}
+        animate={{ height: open ? "auto" : 0, opacity: open ? 1 : 0 }}
+        transition={{ duration: 0.28, ease: "easeInOut" }}
+        style={{ overflow: "hidden" }}
+      >
             <div style={{ padding: "0 20px 20px 48px", borderTop: "1px solid rgba(0, 229, 160, 0.08)" }}>
               <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", color: "#8892b0", margin: "14px 0 16px", letterSpacing: "0.5px" }}>
                 <span style={{ color: "#00e5a0" }}>{t('curriculum.cvCompany')}</span>
@@ -153,9 +177,7 @@ const CvEntry = ({ entry, index, t }) => {
                 ))}
               </div>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      </motion.div>
     </div>
   );
 };
@@ -163,11 +185,24 @@ const CvEntry = ({ entry, index, t }) => {
 const Curriculum = () => {
   const { t } = useTranslation();
   const cvData = t('curriculum.entries', { returnObjects: true });
+  const { crumbs } = useBreadcrumbs(t('curriculum.expTitle'));
 
   return (
-    <div style={{ padding: "60px 20px 60px", maxWidth: "1100px", margin: "0 auto", boxSizing: "border-box" }}>
+    <div style={{ padding: "20px 20px 60px", maxWidth: "1100px", margin: "0 auto", boxSizing: "border-box" }}>
+      <Seo
+        title={t('curriculum.expTitle')}
+        description="Trayectoria profesional, formación y stack técnico de Nuria Guevara, desarrolladora web Full-Stack: React, Node.js, WordPress y más."
+        path="/curriculum"
+        jsonLd={[breadcrumbSchema(crumbs)]}
+      />
 
-      <SectionHeader label={t('curriculum.expLabel')} title={t('curriculum.expTitle')} />
+      <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", color: "#00e5a0", letterSpacing: "3px", textTransform: "uppercase", margin: "0 0 10px" }}>
+        {'// '}{t('curriculum.expLabel')}
+      </p>
+      <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(3rem, 7vw, 5rem)", color: "#ffffff", margin: "0 0 32px", letterSpacing: "4px", lineHeight: "1" }}>
+        {t('curriculum.expTitle')}
+      </h1>
+
       <div style={{ fontFamily: "'Space Mono', monospace" }}>
         <p style={{ fontSize: "0.7rem", color: "rgba(0, 229, 160, 0.4)", marginBottom: "16px" }}>
           {'const experiencia = {'}

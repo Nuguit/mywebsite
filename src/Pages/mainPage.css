@@ -120,3 +120,39 @@
   box-shadow: 0 0 28px rgba(0, 229, 160, 0.18);
   color: var(--accent);
 }
+
+.home-intro {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  text-align: center;
+}
+
+.home-intro-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.home-intro-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin: 0 0 16px;
+}
+
+.home-intro-link {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.home-intro-link:hover {
+  text-decoration: underline;
+}
