@@ -191,7 +191,7 @@ const Curriculum = () => {
     <div style={{ padding: "20px 20px 60px", maxWidth: "1100px", margin: "0 auto", boxSizing: "border-box" }}>
       <Seo
         title={t('curriculum.expTitle')}
-        description="Trayectoria profesional, formación y stack técnico de Nuria Guevara, desarrolladora web Full-Stack: React, Node.js, WordPress y más."
+        description={t('curriculum.seoDescription')}
         path="/curriculum"
         jsonLd={[breadcrumbSchema(crumbs)]}
       />

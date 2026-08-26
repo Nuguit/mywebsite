@@ -28,7 +28,10 @@ const routes = [
   { path: "/safemap", priority: "0.7", changefreq: "yearly" },
   { path: "/faq", priority: "0.6", changefreq: "monthly" },
   { path: "/contacto", priority: "0.5", changefreq: "yearly" },
-  { path: "/blog", priority: "0.5", changefreq: "weekly" },
+  // /blog is intentionally excluded: it's a "coming soon" stub with no real
+  // content yet (see noindex on Blog.jsx) — listing a thin page in the
+  // sitemap signals it as worth crawling/indexing, which it isn't until it
+  // has actual posts. Add it back once there's real content.
   { path: "/react", priority: "0.6", changefreq: "monthly" },
   { path: "/nodejs", priority: "0.6", changefreq: "monthly" },
   { path: "/javascript", priority: "0.6", changefreq: "monthly" },

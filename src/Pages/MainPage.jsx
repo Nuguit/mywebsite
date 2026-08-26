@@ -11,7 +11,7 @@ const MainPage = () => {
   return (
     <>
       <Seo
-        title={null}
+        title={t('home.seoTitle')}
         description={t('home.seoDescription')}
         path="/"
       />

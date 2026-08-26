@@ -29,6 +29,7 @@ const Blog = () => {
         title={t('blog.seoTitle')}
         description={t('blog.seoDescription')}
         path="/blog"
+        noindex
         jsonLd={[breadcrumbSchema(crumbs), collectionPageSchema({ path: '/blog', title: t('blog.seoTitle'), description: t('blog.seoDescription') })]}
       />
 

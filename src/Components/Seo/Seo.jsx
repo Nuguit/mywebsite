@@ -13,6 +13,7 @@ const Seo = ({
   schemaType = "WebPage",
   jsonLd = [],
   includeBase = true,
+  noindex = false,
 }) => {
   const { i18n } = useTranslation();
   const lang = i18n.language?.startsWith("en") ? "en" : "es";
@@ -39,6 +40,7 @@ const Seo = ({
     <Helmet htmlAttributes={{ lang }}>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex,follow" />}
       <link rel="canonical" href={url} />
 
       <meta property="og:title" content={fullTitle} />

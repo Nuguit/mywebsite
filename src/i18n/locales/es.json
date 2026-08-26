@@ -8,6 +8,7 @@
     "languageSwitcher": "Selector de idioma"
   },
   "home": {
+    "seoTitle": "Desarrolladora Web Full-Stack",
     "seoDescription": "Nuria Guevara Fuentes, desarrolladora web Full-Stack especializada en React, Node.js y WordPress. Portfolio, proyectos y trayectoria profesional.",
     "label": "Full-Stack Developer · Desarrollo Web con IA",
     "desc1": "Creativa y curiosa por naturaleza.",
@@ -109,6 +110,7 @@
   "curriculum": {
     "expLabel": "experiencia",
     "expTitle": "Trayectoria Profesional",
+    "seoDescription": "Trayectoria profesional, formación y stack técnico de Nuria Guevara, desarrolladora web Full-Stack: React, Node.js, WordPress y más.",
     "stackLabel": "stack técnico",
     "stackTitle": "Lenguajes y Herramientas",
     "toolsLabel": "herramientas",
