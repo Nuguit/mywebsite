@@ -12,7 +12,7 @@ export const SITE_OG_IMAGE = {
 
 // Bump this when content is meaningfully updated — drives dateModified in
 // WebPage JSON-LD and lastmod in sitemap.xml (see scripts/generate-sitemap.js).
-export const LAST_UPDATED = "2026-07-30";
+export const LAST_UPDATED = "2026-11-09";
 
 export const AUTHOR = {
   name: "Nuria Guevara",

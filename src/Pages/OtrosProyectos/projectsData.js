@@ -19,7 +19,7 @@ import eaglesWebpSmall from "./eagles-480w.webp";
 export const projectsMeta = [
   {
     slug: "pastinpixels",
-    tags: ["React", "TFG", "DAW"],
+    tags: ["React", "Node.js", "API", "TFG", "DAW"],
     image: pastinpixels,
     imageWebp: pastinpixelsWebp,
     imageWebpSmall: pastinpixelsWebpSmall,

@@ -24,6 +24,17 @@ const Block = ({ title, children }) => (
   </div>
 );
 
+// Accepts a single string or an array of paragraphs.
+const Paragraphs = ({ items }) => (
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    {[].concat(items).map((text, i) => (
+      <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.98rem', color: '#c8d6e5', lineHeight: '1.85', margin: 0 }}>
+        {text}
+      </p>
+    ))}
+  </div>
+);
+
 const TechPage = ({ slug, path }) => {
   const { t } = useTranslation();
   const tech = t(`technologies.${slug}`, { returnObjects: true });
@@ -49,10 +60,14 @@ const TechPage = ({ slug, path }) => {
       </p>
 
       <Block title={t('technologies.experienceTitle')}>
-        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.98rem', color: '#c8d6e5', lineHeight: '1.85', margin: 0 }}>
-          {tech.experience}
-        </p>
+        <Paragraphs items={tech.experience} />
       </Block>
+
+      {(tech.sections || []).map(section => (
+        <Block key={section.title} title={section.title}>
+          <Paragraphs items={section.paragraphs} />
+        </Block>
+      ))}
 
       {tech.projects && tech.projects.length > 0 && (
         <Block title={t('technologies.projectsTitle')}>

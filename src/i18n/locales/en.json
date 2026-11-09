@@ -244,15 +244,15 @@
     "caseStudyVisit": "Visit project",
     "pastinpixels": {
       "title": "Past In Pixels",
-      "description": "Final Degree Project. Unique, creative and groundbreaking — highly praised by the project supervisor. A web experience that fuses history and technology.",
-      "seoDescription": "Case study of Past In Pixels, Nuria Guevara's Final Degree Project: a React web experience that fuses history and technology.",
-      "problem": "The Final Degree Project for the Higher Degree in Web Application Development had to prove the ability to build a complete web application with its own identity, solo, not a generic academic exercise.",
-      "goals": "Design and build a web experience that fused history and technology, applying everything learned during the Higher Degree and bringing a creative, distinctive angle to it.",
-      "architecture": "Application built with React on the frontend, following a component-based architecture typical of the React ecosystem.",
-      "technologies": "React, JavaScript, HTML, CSS.",
-      "challenges": "Combining technical rigor with a creative, visually groundbreaking proposal within the timeline and requirements of a Final Degree Project.",
-      "solution": "Full development of the project with React, taking care of both the code architecture and the narrative and visual experience of the final result.",
-      "result": "Project described by the project supervisor as unique, creative and groundbreaking — the highest qualitative recognition one of her academic projects has received."
+      "description": "Final degree project, described by my tutor as unique, creative and ground-breaking. An interactive map to explore history through art, built with React, Node.js and seven external APIs.",
+      "seoDescription": "Case study of Past In Pixels, Nuria Guevara's final degree project: an interactive art and history map with React, a Node.js backend and museum, Wikipedia and Wikidata APIs.",
+      "problem": "The final project of the Higher Technical Degree in Web Application Development had to prove I could build, on my own, a complete web application with its own identity. I chose a real problem: history and art are usually learned separately and without geographic context, when an artwork makes far more sense once you know where and at what historical moment it was created.",
+      "goals": "Build a Full-Stack application that placed artworks and historical events on an interactive map, let users search them by bringing together data from several museums and open sources, and allowed each user to create their own narrative tours.",
+      "architecture": "React frontend, built with Vite and deployed on Vercel, with React Router and protected routes for signed-in users and administrators. A custom Node.js backend, deployed on Render, exposes a REST API for users, token authentication, tours and their artworks, and admin statistics. The frontend combines that API with seven external services: the Metropolitan Museum of Art, Europeana and Art Institute of Chicago collections, the Wikipedia REST API in Spanish and English, SPARQL queries to Wikidata and Google Maps.",
+      "technologies": "React, Vite, React Router, Node.js, REST API, Google Maps API, Wikidata (SPARQL), Wikipedia API, Met Museum API, Europeana API, Art Institute of Chicago API, JavaScript, HTML, CSS.",
+      "challenges": "The biggest challenge was unifying very different data sources: each museum returns information in its own format, some APIs require a key and any of them can be slow or fail. On top of that, artworks and events had to be geolocated to be drawn on the map, and a user system with roles had to be designed without losing sight of the creative, visual side the project called for.",
+      "solution": "Searches run in parallel across the three museums with Promise.allSettled, so if one source fails the others still return results, and duplicates are then removed to show a single list. Wikidata provides, via SPARQL, artworks and historical events with coordinates and dates, and Wikipedia adds a summary for each one in a context panel. The Node.js backend handles sign-up and login, profiles, tours (with their artworks and personal notes) and a super-admin panel to manage users, with private and admin routes on the frontend as well.",
+      "result": "A complete, published Full-Stack application where anyone can explore history through art on a map and save their own tours. My tutor described it as unique, creative and ground-breaking, the highest qualitative recognition any of my academic projects has received."
     },
     "palmotion": {
       "title": "PalMotion",
@@ -404,61 +404,184 @@
     "react": {
       "name": "React",
       "seoTitle": "React — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience with React: real projects, best practices and tools from the React ecosystem.",
-      "intro": "React is my main library for building frontend interfaces.",
-      "experience": "I learned React intensively at the IMMUNE Technology Institute Full-Stack bootcamp (2023-2024) and have used it ever since as the foundation of my frontend projects, combining it with Chakra UI for interfaces and Framer Motion for animations.",
-      "projects": ["safemap", "pastinpixels"],
+      "seoDescription": "Three years with React, my favourite framework: the foundation of my final degree project (Past In Pixels) and my bootcamp capstone (SafeMap).",
+      "intro": "React is my favourite framework and the one I almost always choose when I get to decide a project's technology. I've been working with it for three years, first during my training and now in my day-to-day professional work.",
+      "experience": [
+        "I started with React intensively at the IMMUNE Technology Institute Full-Stack bootcamp (2023-2024) and haven't stopped using it since. The projects that closed both stages of my training are built with React: SafeMap, my bootcamp capstone, and Past In Pixels, my final project for the Higher Technical Degree in Web Application Development.",
+        "In SafeMap, React drives a collaborative interface where users log in, browse a map and flag risky or low-accessibility areas, talking to a custom REST API built with Node.js and Express. Past In Pixels was a different challenge: building a visual, narrative experience that blends history and technology, where a component architecture let me keep content, presentation and animation separate.",
+        "I still work with React today and, whenever I can choose the stack, it's the first option I propose. This very website is an example: it's built with React, React Router, Chakra UI, i18next for bilingual support and a prerendering step so search engines can read every page."
+      ],
+      "projects": [
+        "pastinpixels",
+        "safemap"
+      ],
       "practices": [
         "Reusable components with clear single responsibilities",
-        "State management with hooks (useState, useEffect)",
-        "Routing with React Router",
+        "State management with hooks, plus custom hooks for reusable logic",
+        "Routing with React Router and lazy-loaded pages with React.lazy",
+        "Internationalisation with i18next, with copy kept out of the code",
+        "SEO for React apps: per-page metadata and prerendering",
         "Accessible interfaces combined with Framer Motion animations"
       ],
-      "tools": ["Chakra UI", "Framer Motion", "GitHub", "Postman"]
+      "tools": [
+        "React Router",
+        "Chakra UI",
+        "Framer Motion",
+        "i18next",
+        "GitHub",
+        "Postman"
+      ],
+      "sections": [
+        {
+          "title": "Why React is my first choice",
+          "paragraphs": [
+            "What I value most about React is that it makes you think of the interface as small, predictable pieces. A well-scoped component is easy to understand, test and reuse, and that pays off when a project grows or when someone else has to pick up the code.",
+            "Its ecosystem matters a lot too: React Router for navigation, component libraries like Chakra UI, Framer Motion for animation or react-helmet-async for SEO. Almost every need already has a mature solution, which leaves time for what makes the product unique."
+          ]
+        },
+        {
+          "title": "How I structure a React project",
+          "paragraphs": [
+            "I split the code into pages, reusable components and a utilities folder for logic that doesn't depend on the UI: configuration, structured data and custom hooks. Copy lives outside components, in translation files, so adding a language or fixing a sentence doesn't mean touching JSX. And pages that aren't needed on the first visit are lazy-loaded with React.lazy and Suspense."
+          ]
+        }
+      ]
     },
     "nodejs": {
       "name": "Node.js",
       "seoTitle": "Node.js — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience with Node.js: REST APIs with Express, JWT authentication and real projects.",
-      "intro": "Node.js is the foundation of my backend in Full-Stack projects.",
-      "experience": "I used Node.js alongside Express and MongoDB to build SafeMap's entire backend during the IMMUNE Technology Institute bootcamp, including the REST architecture and user authentication.",
-      "projects": ["safemap"],
+      "seoDescription": "Node.js underpins Nuria Guevara's projects: REST APIs in SafeMap and Past In Pixels, JWT authentication, and scripts and build tooling.",
+      "intro": "Node.js sits underneath all my projects: as the server when there's a backend, and as the development and build environment when the frontend takes centre stage.",
+      "experience": [
+        "My most complete Node.js project is SafeMap, my capstone for the IMMUNE Technology Institute Full-Stack bootcamp. There I built the entire backend with Node.js and Express: the REST API consumed by the React frontend, user sign-up and login with JWT, and the MongoDB connection that stores users and risk zones.",
+        "In Past In Pixels, my final degree project, I used Node.js for the backend again: a REST API deployed on Render that manages users, token authentication, custom tours with their artworks and notes, and an admin panel with statistics and user management.",
+        "But Node.js is there even when there's no custom server. My whole frontend workflow depends on it: dependency management with npm, dev servers, builds and custom scripts. On this website, for instance, I use Node.js scripts to generate the sitemap automatically and to prerender every page before publishing it."
+      ],
+      "projects": [
+        "safemap",
+        "pastinpixels"
+      ],
       "practices": [
         "REST architecture with Express",
-        "Authentication and authorization with JWT",
-        "Separation of routes, controllers and models",
-        "Endpoint testing and documentation with Postman"
+        "Authentication and authorisation with JWT",
+        "Separate routes, controllers, models and middlewares",
+        "Configuration and credentials in environment variables",
+        "Endpoint testing and documentation with Postman",
+        "Node.js scripts to automate build and deployment tasks"
       ],
-      "tools": ["Express", "MongoDB", "JWT", "Postman"]
+      "tools": [
+        "Express",
+        "npm",
+        "JWT",
+        "MySQL",
+        "MongoDB",
+        "Postman"
+      ],
+      "sections": [
+        {
+          "title": "How I structure a Node.js backend",
+          "paragraphs": [
+            "I split code by responsibility: routes that define endpoints, controllers with each request's logic, models that describe the data, and middlewares for cross-cutting concerns like authentication or error handling. Credentials and configuration live in environment variables, never in the code.",
+            "Before wiring up the frontend I test every endpoint in Postman, so when something breaks I know whether the problem is in the API or the interface."
+          ]
+        },
+        {
+          "title": "Why Node.js",
+          "paragraphs": [
+            "Using JavaScript on both server and client removes much of the friction of Full-Stack work. And the npm ecosystem means tasks like authentication, validation or database access have proven solutions, so I can focus on the product logic."
+          ]
+        }
+      ]
     },
     "javascript": {
       "name": "JavaScript",
       "seoTitle": "JavaScript — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience with JavaScript, the base language of all her frontend and backend projects.",
-      "intro": "JavaScript is the language behind most of my projects, with or without a framework.",
-      "experience": "I use it both in projects with React and Node.js and in vanilla JavaScript projects, like Movie Selector, where I consume an external API without relying on any framework.",
-      "projects": ["safemap", "pastinpixels", "movieselector", "eaglesinspain"],
+      "seoDescription": "JavaScript underpins all of Nuria Guevara's projects: frontend with React, backend with Node.js and vanilla JavaScript apps like Movie Selector.",
+      "intro": "JavaScript is the foundation of everything I build. If React is the skeleton of my applications, JavaScript is the muscle: logic, data and interaction all run through it.",
+      "experience": [
+        "I work with JavaScript every day, on the frontend alongside React and on the backend with Node.js. Using the same language on both layers lets me move across the whole application without switching context, apply the same validation rules and reason about data end to end.",
+        "Before relying on frameworks I wanted to master the language itself. Movie Selector is a good example: a vanilla JavaScript app with no libraries that queries an external movie API, handles the asynchronous responses and renders the result to the DOM. Projects like that teach you what a framework actually does for you.",
+        "It's also there in projects where another language takes centre stage: in Eagles in Spain, my first PHP project, JavaScript handled the frontend interactivity."
+      ],
+      "projects": [
+        "safemap",
+        "pastinpixels",
+        "movieselector",
+        "eaglesinspain"
+      ],
       "practices": [
         "Vanilla JavaScript when a project doesn't need a framework",
-        "Consuming external APIs with fetch and handling promises",
-        "Modular, readable code",
+        "Asynchrony with async/await and explicit error handling",
+        "Consuming external APIs with fetch",
+        "Modular code with ES Modules and small functions",
+        "Immutable work with arrays and objects (map, filter, reduce, spread)",
         "Version control with Git and GitHub"
       ],
-      "tools": ["Git", "GitHub", "Postman"]
+      "tools": [
+        "Git",
+        "GitHub",
+        "npm",
+        "Chrome DevTools",
+        "Postman"
+      ],
+      "sections": [
+        {
+          "title": "What mastering JavaScript means to me",
+          "paragraphs": [
+            "It isn't just knowing the syntax but understanding how the language behaves: asynchrony with promises and async/await, variable scope and closures, immutability when working with arrays and objects, and the differences between the browser and Node.js.",
+            "That knowledge is what lets you debug an error the framework doesn't explain, decide when a library is unnecessary or write code someone else can read effortlessly."
+          ]
+        },
+        {
+          "title": "Modern JavaScript, every day",
+          "paragraphs": [
+            "I write modern JavaScript (ES6+): modules, destructuring, arrow functions, array methods like map, filter and reduce, and fetch to talk to APIs. I keep code modular, with small functions and clear names, and version it with Git and GitHub."
+          ]
+        }
+      ]
     },
     "php": {
       "name": "PHP",
-      "seoTitle": "PHP — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience with PHP, from her first project (Eagles in Spain) to her current professional use.",
-      "intro": "PHP was my first backend language outside the JavaScript ecosystem.",
-      "experience": "My first PHP project was Eagles in Spain, an intermodular project for the Higher Degree in Web Development. I've kept using PHP since then in my current professional role, where I work with different languages and frameworks depending on each project.",
-      "projects": ["eaglesinspain"],
-      "practices": [
-        "PHP backend combined with HTML, CSS and JavaScript",
-        "Clear, maintainable project structure",
-        "Best practices learned in a real professional environment"
+      "seoTitle": "PHP & Laravel — Nuria Guevara's experience",
+      "seoDescription": "Nuria Guevara's experience with PHP and Laravel: from Eagles in Spain, her first PHP project, to professional use alongside MySQL.",
+      "intro": "PHP is one of the backend languages I work with, both plain PHP and Laravel, and always paired with MySQL.",
+      "experience": [
+        "My first contact with PHP was Eagles in Spain, the cross-module project of my Higher Technical Degree in Web Application Development: a website for the Spanish community of Philadelphia Eagles fans. I learned the language from scratch while bringing the requirements of several subjects together in a single project.",
+        "Since then I've kept working with PHP professionally, in an environment where different languages and frameworks coexist depending on the project. There I've worked both with PHP more generally (maintenance, new features, frontend integration) and with Laravel when a project calls for a fuller structure.",
+        "PHP is also the language WordPress runs on, which I work with every day too, so understanding what sits underneath the CMS helps me go beyond plugins."
       ],
-      "tools": ["GitHub"]
+      "projects": [
+        "eaglesinspain"
+      ],
+      "practices": [
+        "MVC with Laravel: routes, controllers, models and Blade views",
+        "Prepared statements and input validation",
+        "Migrations to version the database schema",
+        "Separation between business logic and presentation",
+        "Integrating a PHP backend with HTML, CSS and JavaScript"
+      ],
+      "tools": [
+        "Laravel",
+        "MySQL",
+        "Composer",
+        "WordPress",
+        "GitHub"
+      ],
+      "sections": [
+        {
+          "title": "Plain PHP and Laravel",
+          "paragraphs": [
+            "Plain PHP gives me full control over every request and is a good fit for simple sites. Laravel brings what a bigger project needs: routing, the MVC pattern, the Eloquent ORM for database work, migrations to version the schema and Blade templates for views.",
+            "Having started with PHP without a framework helps me understand what Laravel solves under the hood, which makes debugging and decision-making easier."
+          ]
+        },
+        {
+          "title": "PHP and MySQL",
+          "paragraphs": [
+            "In my PHP projects the database is MySQL. I use prepared statements to prevent SQL injection and, in Laravel, migrations and Eloquent to keep schema and data consistent."
+          ]
+        }
+      ]
     },
     "wordpress": {
       "name": "WordPress",
@@ -472,50 +595,152 @@
         "Multilingual support without relying on extra plugins",
         "Maintenance and development in a professional environment"
       ],
-      "tools": ["WordPress"]
+      "tools": [
+        "WordPress"
+      ]
     },
     "mysql": {
       "name": "MySQL",
       "seoTitle": "MySQL — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience with MySQL as part of her relational database stack.",
-      "intro": "MySQL is the relational database I use when a project calls for it.",
-      "experience": "It's been part of my technical stack since training at the Higher Degree in Web Application Development, and I use it in professional projects that need a relational database, in combination with PHP or Laravel.",
+      "seoDescription": "MySQL is the database behind Nuria Guevara's projects: relational schemas and SQL in apps built with PHP and Laravel or with React and Node.js.",
+      "intro": "MySQL is the database I use in my projects. When data has clear relationships (users, content, categories, orders), a well-designed relational database is the most solid choice.",
+      "experience": [
+        "I learned relational database design during my Higher Technical Degree in Web Application Development, and since then MySQL has been the database I work with day to day, both in PHP and Laravel projects and in JavaScript applications with React on the frontend and Node.js on the backend.",
+        "My work with MySQL ranges from designing the data model to everyday queries: defining tables, primary and foreign keys, relationships between entities, and writing queries that return exactly what the application needs."
+      ],
       "projects": [],
       "practices": [
-        "Designing normalized relational schemas",
-        "Efficient SQL queries",
-        "Integration with PHP and Laravel backends"
+        "Normalised relational schema design",
+        "Foreign keys to guarantee data integrity",
+        "SQL queries with JOINs, aggregations and subqueries",
+        "Indexes on frequently searched columns",
+        "Prepared statements to prevent SQL injection",
+        "Laravel migrations to version the schema",
+        "MySQL access from Node.js APIs for React applications"
       ],
-      "tools": ["Laravel"]
+      "tools": [
+        "PHP",
+        "Laravel",
+        "Eloquent",
+        "Node.js",
+        "Express",
+        "React"
+      ],
+      "sections": [
+        {
+          "title": "How I design a database",
+          "paragraphs": [
+            "Before creating a single table I think about the entities and how they relate. I normalise the schema to avoid duplicated data, use foreign keys so the database itself guarantees integrity, and choose each column's type carefully. A good initial design saves a lot of trouble as the application grows."
+          ]
+        },
+        {
+          "title": "MySQL in JavaScript and React applications",
+          "paragraphs": [
+            "In React applications the frontend never talks to the database directly: it goes through a Node.js and Express API, which connects to MySQL, runs the queries and returns the data as JSON. That keeps credentials and data-access logic safely on the server, while the React interface only requests and displays information.",
+            "Working with the same relational model from PHP or from JavaScript lets me pick the backend language that best fits each project without giving up a solid database."
+          ]
+        },
+        {
+          "title": "Queries and performance",
+          "paragraphs": [
+            "I write SQL with JOINs to combine tables, GROUP BY aggregations and precise filters, and I add indexes on the most frequently searched columns. From both PHP and Node.js I always use prepared statements, and in Laravel I rely on Eloquent and migrations to version the schema alongside the code."
+          ]
+        },
+        {
+          "title": "MySQL vs MongoDB",
+          "paragraphs": [
+            "I've also worked with MongoDB, but for most projects I prefer MySQL: relationships between data are explicit, transactions guarantee consistency and SQL is a standard language any developer can read."
+          ]
+        }
+      ]
     },
     "mongodb": {
       "name": "MongoDB",
       "seoTitle": "MongoDB — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience with MongoDB as a NoSQL database in Full-Stack projects with Node.js.",
-      "intro": "MongoDB is my go-to NoSQL database in Full-Stack projects with Node.js.",
-      "experience": "I used it as SafeMap's database, alongside Node.js and Express, to store both users and the risk zones flagged by the community. I learned it during the IMMUNE Technology Institute Full-Stack bootcamp.",
-      "projects": ["safemap"],
-      "practices": [
-        "Document-oriented data modeling",
-        "Integration with Express via Mongoose",
-        "Schema design tailored to collaborative applications"
+      "seoDescription": "Nuria Guevara's experience with MongoDB: SafeMap's database in the Full-Stack bootcamp and practice projects with Node.js and Mongoose.",
+      "intro": "MongoDB is the NoSQL database I've used to learn the document model and understand when it fits better than a relational database.",
+      "experience": [
+        "I learned it during the IMMUNE Technology Institute Full-Stack bootcamp, where it was part of the stack alongside Express, React and Node.js, and I used it in SafeMap to store users and the risk zones flagged by the community. Since then I've kept building practice projects to go deeper into how it works.",
+        "My main database is MySQL, but working with MongoDB has given me another way of thinking about data and lets me choose the right tool for each project with good judgement."
       ],
-      "tools": ["Express", "Postman"]
+      "projects": [
+        "safemap"
+      ],
+      "practices": [
+        "Document-oriented data modelling",
+        "Schemas and validation with Mongoose",
+        "Choosing between embedded documents and references",
+        "Integration with Express in a REST API"
+      ],
+      "tools": [
+        "Mongoose",
+        "Express",
+        "Node.js",
+        "Postman"
+      ],
+      "sections": [
+        {
+          "title": "What working with documents taught me",
+          "paragraphs": [
+            "MongoDB stores data as flexible, JSON-like documents, which fits naturally with a JavaScript application. With Mongoose I defined schemas and validation to keep some structure, and learned to decide when to embed information inside a document and when to reference another one.",
+            "In SafeMap, each flagged zone is a document with its location, description and the user who created it, a structure MongoDB handles very naturally."
+          ]
+        },
+        {
+          "title": "When I'd choose MongoDB",
+          "paragraphs": [
+            "I'd pick it for loosely structured or frequently changing data, quick prototypes, or applications where each record is fairly independent. For highly relational data that needs strict consistency, I still prefer MySQL."
+          ]
+        }
+      ]
     },
     "api": {
       "name": "API / REST",
       "seoTitle": "REST APIs — Nuria Guevara's experience",
-      "seoDescription": "Nuria Guevara's experience building and consuming REST APIs, with Express and JWT on the backend and fetch on the frontend.",
-      "intro": "Building and consuming REST APIs is a core part of my Full-Stack work.",
-      "experience": "I built a complete REST API with Express and JWT authentication for SafeMap, and I've consumed external APIs from the frontend in projects like Movie Selector. I use Postman daily to test and document endpoints.",
-      "projects": ["safemap", "movieselector"],
-      "practices": [
-        "Designing clear, predictable REST endpoints",
-        "Authentication and authorization with JWT",
-        "Documenting and testing endpoints with Postman",
-        "Consuming external APIs from the frontend with fetch"
+      "seoDescription": "Nuria Guevara has built and consumed REST APIs since she started coding: JWT backends in SafeMap and Past In Pixels, plus museum, Wikipedia and Wikidata APIs.",
+      "intro": "I've worked with APIs since I started programming. Building and consuming them is a core part of my Full-Stack work: it's what connects an interface to the data that gives it meaning.",
+      "experience": [
+        "My two most complete training projects revolve around APIs. In SafeMap, my capstone for the IMMUNE Technology Institute Full-Stack bootcamp, I built a REST API with Node.js, Express and JWT authentication that manages users and the risk zones flagged by the community.",
+        "In Past In Pixels, my final degree project, I went a step further and combined both sides. On one hand, the app has its own Node.js backend with a REST API: user sign-up and login, profile, custom tours with their artworks and an admin panel with statistics, all protected with Bearer tokens. On the other, the React frontend consumes several public cultural APIs at once: the Metropolitan Museum of Art collection, Europeana and the Art Institute of Chicago to search for artworks, Wikipedia and Wikidata to enrich them with historical context, and Google Maps to place them on a map.",
+        "I've also consumed APIs in vanilla JavaScript projects such as Movie Selector, which queries an external movie API to recommend a film, and they remain part of my everyday work."
       ],
-      "tools": ["Postman", "Express", "JWT"]
+      "projects": [
+        "pastinpixels",
+        "safemap",
+        "movieselector"
+      ],
+      "practices": [
+        "REST endpoints organised by resource",
+        "Authentication with JWT and Bearer tokens, plus role-based admin routes",
+        "Consuming several APIs in parallel with Promise.allSettled and graceful failure",
+        "Unifying and de-duplicating data from different sources",
+        "SPARQL queries to Wikidata for structured data",
+        "Centralised client-side calls with single-point error handling",
+        "Endpoint testing and documentation with Postman"
+      ],
+      "tools": [
+        "Postman",
+        "Express",
+        "JWT",
+        "Wikidata",
+        "Google Maps API"
+      ],
+      "sections": [
+        {
+          "title": "Combining several APIs into one experience",
+          "paragraphs": [
+            "The most interesting challenge in Past In Pixels was unifying sources that look nothing alike. Each museum returns data in a different shape, some APIs need a key and others don't, and any of them can be slow or fail. I fire the searches in parallel with Promise.allSettled, so if one source fails the others still show results, and then remove duplicates so the user sees a single, coherent list.",
+            "For each artwork's context I use the Wikipedia REST API in Spanish and English and SPARQL queries to Wikidata, which return structured data such as artists, dates and places."
+          ]
+        },
+        {
+          "title": "How I design my own API",
+          "paragraphs": [
+            "I organise endpoints by resource (users, tours, artworks) with clear, predictable routes, and use HTTP methods and status codes for what they actually mean. Private routes require a token in the Authorization header, and admin routes are reserved for users with that role.",
+            "I test and document every endpoint in Postman before wiring it to the frontend, and on the client I centralise calls in functions that add headers and handle errors in one place."
+          ]
+        }
+      ]
     }
   },
   "footer": {
