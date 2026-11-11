@@ -73,4 +73,5 @@ export const NAV_LABELS = {
   "/otrosproyectos/palmotion": { es: "PalMotion", en: "PalMotion" },
   "/otrosproyectos/movieselector": { es: "Movie Selector", en: "Movie Selector" },
   "/otrosproyectos/eaglesinspain": { es: "Eagles in Spain", en: "Eagles in Spain" },
+  "/otrosproyectos/elfisioguiri": { es: "El Fisio Guiri", en: "El Fisio Guiri" },
 };

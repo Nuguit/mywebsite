@@ -16,6 +16,7 @@
 - [PalMotion](https://www.nuriaguevarafuentes.com/otrosproyectos/palmotion): Fitness app built with Python and Streamlit.
 - [Movie Selector](https://www.nuriaguevarafuentes.com/otrosproyectos/movieselector): Vanilla JavaScript app consuming an external movie API.
 - [Eagles in Spain](https://www.nuriaguevarafuentes.com/otrosproyectos/eaglesinspain): Her first PHP project, built for the Spanish Philadelphia Eagles fan community.
+- [El Fisio Guiri](https://www.nuriaguevarafuentes.com/otrosproyectos/elfisioguiri): Website designed and developed for client Josh Kozak, a physical therapist teaching clinical English — static HTML/CSS/JS site with technical SEO and structured data.
 
 ## Technologies
 

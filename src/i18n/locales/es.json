@@ -294,6 +294,18 @@
       "title": "SafeMap",
       "description": "Mapa colaborativo donde los usuarios marcan zonas de riesgo o baja accesibilidad para ayudar a viajeros.",
       "seoDescription": "Caso de estudio de SafeMap: mapa colaborativo de Nuria Guevara construido con React, Node.js, MongoDB, Express y JWT."
+    },
+    "elfisioguiri": {
+      "title": "El Fisio Guiri",
+      "description": "Encargo del fisioterapeuta Josh Kozak: diseño y desarrollo de su web de clases de inglés clínico para fisioterapeutas. Sitio a medida, rápido, optimizado para SEO y con formulario de contacto.",
+      "seoDescription": "Caso de estudio de El Fisio Guiri: web diseñada y desarrollada por Nuria Guevara por encargo del fisioterapeuta Josh Kozak, para clases de inglés clínico para fisioterapeutas, con HTML, CSS y JavaScript, SEO técnico y datos estructurados.",
+      "problem": "Proyecto por encargo. Josh Kozak, fisioterapeuta (PTA en Estados Unidos) y profesor, necesitaba una presencia web propia para dar a conocer sus clases online de inglés clínico para fisioterapeutas y terapeutas ocupacionales hispanohablantes, y convertir las visitas en solicitudes de información.",
+      "goals": "Diseñar y desarrollar desde cero una web de presentación clara y con personalidad que explicara la formación, la trayectoria del profesor y el formato de las clases, resolviera las dudas habituales y facilitara el contacto, además de posicionar bien en buscadores.",
+      "architecture": "Sitio estático de una sola página con navegación por anclas entre secciones (Formación, Sobre mí, Clases, Mi historia, Preguntas y Contacto). El formulario de contacto se procesa con FormSubmit, sin necesidad de un backend propio.",
+      "technologies": "HTML, CSS, JavaScript, FormSubmit, Schema.org (JSON-LD), Open Graph, llms.txt.",
+      "challenges": "Transmitir de forma cercana una propuesta muy específica a un público concreto, y conseguir que un sitio sin backend recogiera solicitudes completas y cumpliera con los requisitos de protección de datos.",
+      "solution": "Me encargué tanto del diseño como del desarrollo: una identidad visual propia, con secciones bien diferenciadas, preguntas frecuentes desplegables y un formulario que recoge el tipo de inglés, formato y estilo de clase, con consentimientos de privacidad. A nivel técnico, SEO cuidado: metadatos, Open Graph, datos estructurados Schema.org (WebSite y EducationalOrganization) y un archivo llms.txt para buscadores de IA.",
+      "result": "Web entregada al cliente y publicada en elfisioguiri.com, que presenta su formación y canaliza las solicitudes de clases directamente a su correo."
     }
   },
   "safemap": {
@@ -507,7 +519,8 @@
         "safemap",
         "pastinpixels",
         "movieselector",
-        "eaglesinspain"
+        "eaglesinspain",
+        "elfisioguiri"
       ],
       "practices": [
         "JavaScript vanilla cuando el proyecto no necesita un framework",

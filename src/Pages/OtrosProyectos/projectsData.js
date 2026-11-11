@@ -13,10 +13,25 @@ import movieselectorWebpSmall from "./movieselector-480w.webp";
 import eagles from "./eagles.jpeg";
 import eaglesWebp from "./eagles.webp";
 import eaglesWebpSmall from "./eagles-480w.webp";
+import elfisioguiri from "./elfisioguiri.jpg";
+import elfisioguiriWebp from "./elfisioguiri.webp";
+import elfisioguiriWebpSmall from "./elfisioguiri-480w.webp";
 
 // Shared by the OtrosProyectos index grid and each ProjectCaseStudy page,
 // so image/tags/links only live in one place.
 export const projectsMeta = [
+  {
+    slug: "elfisioguiri",
+    tags: ["Freelance", "UI/UX", "HTML", "CSS", "JavaScript", "SEO"],
+    image: elfisioguiri,
+    imageWebp: elfisioguiriWebp,
+    imageWebpSmall: elfisioguiriWebpSmall,
+    imageWidth: 1200,
+    link: "https://elfisioguiri.com/",
+    internal: false,
+    status: "live",
+    caseStudy: true,
+  },
   {
     slug: "pastinpixels",
     tags: ["React", "Node.js", "API", "TFG", "DAW"],

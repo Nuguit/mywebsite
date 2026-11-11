@@ -25,6 +25,7 @@ const routes = [
   { path: "/otrosproyectos/palmotion", priority: "0.6", changefreq: "yearly" },
   { path: "/otrosproyectos/movieselector", priority: "0.6", changefreq: "yearly" },
   { path: "/otrosproyectos/eaglesinspain", priority: "0.6", changefreq: "yearly" },
+  { path: "/otrosproyectos/elfisioguiri", priority: "0.6", changefreq: "yearly" },
   { path: "/safemap", priority: "0.7", changefreq: "yearly" },
   { path: "/faq", priority: "0.6", changefreq: "monthly" },
   { path: "/contacto", priority: "0.5", changefreq: "yearly" },

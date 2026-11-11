@@ -294,6 +294,18 @@
       "title": "SafeMap",
       "description": "Collaborative map where users flag dangerous or low-accessibility areas to help travelers.",
       "seoDescription": "Case study of SafeMap, Nuria Guevara's Full-Stack bootcamp final project: a collaborative map built with React, Node.js, MongoDB, Express and JWT."
+    },
+    "elfisioguiri": {
+      "title": "El Fisio Guiri",
+      "description": "Commissioned by physical therapist Josh Kozak: design and development of his website for clinical English classes for physical therapists. A fast, custom site, SEO-optimised and with a contact form.",
+      "seoDescription": "Case study of El Fisio Guiri: a website designed and developed by Nuria Guevara, commissioned by physical therapist Josh Kozak, for clinical English classes for physical therapists, built with HTML, CSS and JavaScript, technical SEO and structured data.",
+      "problem": "A client commission. Josh Kozak, a physical therapist (PTA in the United States) and teacher, needed his own website to promote his online clinical English classes for Spanish-speaking physical and occupational therapists, and to turn visits into enquiries.",
+      "goals": "Design and build from scratch a clear presentation site with personality that explains the training, the teacher's background and the class format, answers common questions and makes getting in touch easy, while ranking well in search engines.",
+      "architecture": "Single-page static site with anchor navigation between sections (Training, About me, Classes, My story, FAQ and Contact). The contact form is handled by FormSubmit, with no custom backend required.",
+      "technologies": "HTML, CSS, JavaScript, FormSubmit, Schema.org (JSON-LD), Open Graph, llms.txt.",
+      "challenges": "Conveying a very specific offer to a niche audience in a friendly way, and getting a backend-less site to collect complete enquiries while meeting data protection requirements.",
+      "solution": "I handled both the design and the development: a custom visual identity, with clearly separated sections, expandable FAQs and a form that captures the type of English, format and class style, with privacy consents. On the technical side, careful SEO: metadata, Open Graph, Schema.org structured data (WebSite and EducationalOrganization) and an llms.txt file for AI search engines.",
+      "result": "Website delivered to the client and live at elfisioguiri.com, showcasing his training and routing class enquiries straight to his inbox."
     }
   },
   "safemap": {
@@ -507,7 +519,8 @@
         "safemap",
         "pastinpixels",
         "movieselector",
-        "eaglesinspain"
+        "eaglesinspain",
+        "elfisioguiri"
       ],
       "practices": [
         "Vanilla JavaScript when a project doesn't need a framework",

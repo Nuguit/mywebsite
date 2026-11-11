@@ -12,6 +12,7 @@ const targets = [
   "src/Pages/OtrosProyectos/palmotion.jpg",
   "src/Pages/OtrosProyectos/movieselector.jpg",
   "src/Pages/OtrosProyectos/eagles.jpeg",
+  "src/Pages/OtrosProyectos/elfisioguiri.jpg",
   "src/Pages/SafeMap/safemap.png",
 ];
 
